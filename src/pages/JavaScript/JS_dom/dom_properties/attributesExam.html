@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes Examples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-24">
+    <div class="testClass" id="testId" style="height: 400px; width: 50%; background-color: aqua; display: grid; align-content: center; justify-content: center; font-size: 50px;" >
+        test-div
+    </div>
+    <div id="output-1"></div>
+    <div id="output-2"></div>
+    <script>
+     let attri_1 =   document.getElementById('testId').attributes.length;
+     document.querySelector('#output-1').innerHTML = "Attributes length of Test div is "+ attri_1;
+     let attri_names =   document.getElementById('testId').attributes;
+     let attriName = '';
+     for(let i = 0; i < attri_names.length; i++){
+        attriName +=' ' + attri_names[i].name +' : ' + attri_names[i].value;
+     }
+     document.querySelector('#output-2').innerHTML = "Attributes names of Test div are "+ attriName;
+
+    </script>
+</body>
+</html>

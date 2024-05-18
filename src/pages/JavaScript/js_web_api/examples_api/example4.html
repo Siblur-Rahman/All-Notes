@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example-4</title>
+    <style>
+        .itc{
+            color: rgb(140, 12, 232);
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>To User Name, refresh The Website</h2>
+    <h2>User Name: <span class="itc" id="user-name"></span></h2>
+    <h2>code</h2>
+    <pre>
+        fetch('https://randomuser.me/api')
+        .then(res => res.json())
+        .then(data =>{
+            const user = data.results[0];
+            const name = user.name;
+            const userName = `${name.title} ${name.first} ${name.last}`;
+            document.getElementById('user-name').innerText= userName;
+        })
+    </pre>
+    <button><a href="../../js_topics_video/029_2.php" target="_blank">Video 29_2</a></button>
+    <script>
+        fetch('https://randomuser.me/api')
+        .then(res => res.json())
+        .then(data =>{
+            const user = data.results[0];
+            const name = user.name;
+            const userName = `${name.title} ${name.first} ${name.last}`;
+            document.getElementById('user-name').innerText= userName;
+        })
+    </script>
+</body>
+</html>

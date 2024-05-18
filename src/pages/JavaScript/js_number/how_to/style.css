@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+  color: #BB2966;
+}
+.myContainer{
+    width: 90%;
+    background-color: #e6dddd;
+    margin: auto;
+}
+/* common class */
+.itc{
+  color: #0ef49c;
+}
+.code_p{
+  width: auto;
+  background-color: #fff;
+  background: rgb(188, 170, 170);
+  color: #000;
+  padding: 8px 12px;
+  border-left: 4px solid #4CAF50;
+  word-wrap: break-word;
+  /* font-size: 20px; */
+}
+.mark {
+  background: #FFFFCC;
+  color: #000;
+  margin-bottom: 5px;
+  /* font-size: 20px; */
+}
+.output{
+  display: inline-block;
+  padding: 5px;
+  background: #000;
+  color: #BB2966;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* Accordion */
+.accordion {
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+  
+  .active, .accordion:hover {
+    background-color: #BB2966;
+    color: #fff;
+  }
+  .accordion:hover .itc{
+    color: #0ef49c !important;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    display: none;
+  }
+  /* Accordion End */

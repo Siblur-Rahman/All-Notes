@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopPropagationExam</title>
+    <style>
+        .container-stop-propagation{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        color: crimson;
+    }
+    .myDiv{
+        background-color: blue;
+        padding: 40px;
+    }
+    .innerDiv{
+        padding: 20px;
+        background-color: aqua;
+    }
+</style>
+</head>
+<body>
+    <div class="container-stop-propagation">
+        click Inner DIv To Start Propagation 
+        <div class="myDiv" onclick="proMyDivFunc(event)">
+            myDiv
+            <div class="innerDiv" id="propagate-innerDiv" onclick="proInnerDivFunc(event)">
+                innerDiv
+            </div>
+        </div>
+        Click checkbox to Stop Propagation <input type="checkbox" id="propagation-check">
+        <script>
+            function proMyDivFunc(event){
+                alert('My Div')
+                // if(document.getElementById('propagation-check').checked){
+
+                // }
+            }
+            function proInnerDivFunc(event){
+                alert('Inner Div')
+                if(document.getElementById('propagation-check').checked){
+                    event.stopPropagation();
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

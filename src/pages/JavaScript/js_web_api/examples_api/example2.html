@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example-2</title>
+    <style>
+        .itc{
+            color: rgb(140, 12, 232);
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Your Task: <span class="itc" id="activity"></span></h2>
+    <button class="btn" id="btn">To get task, Click Me</button>
+    <h3>Code</h3>
+    <pre>
+        document.getElementById('btn').addEventListener('click', function(){
+            fetch('http://www.boredapi.com/api/activity/')
+        .then(res =>res.json())
+        .then(data =>{
+            document.getElementById('activity').innerText = data.activity;
+        })
+        })
+    </pre>
+    <button><a href="../../js_topics_video/029_1.php" target="_blank">Video 29_1</a></button>
+    <script>
+        document.getElementById('btn').addEventListener('click', function(){
+            fetch('http://www.boredapi.com/api/activity/')
+        .then(res =>res.json())
+        .then(data =>{
+            document.getElementById('activity').innerText = data.activity;
+        })
+        })
+    </script>
+</body>
+</html>

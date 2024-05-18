@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../exam.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <div id="body">
+        <h2 class="text-center">Example-1</h2>
+
+        <button onclick="myFunction()">Move</button>
+        <p>Click "Move" to insert the red span after the header.</p>
+        
+        <span id="mySpan" style="color:red">My span</span>
+        <h2 id="myH2">My Header</h2>
+        <h2 class="accordion text-center">Code-1</h2>
+        <div id="insert-1" class="panel">
+            
+        </div>
+    </div>
+    <script src="../../../js/common.js"></script>
+    <script>
+        function myFunction() {
+        const span = document.getElementById("mySpan");
+        const h2 = document.getElementById("myH2");
+        h2.insertAdjacentElement("afterend", span);
+        }
+            var code_1 =`
+            <h2>The insertAdjacentElement() Method</h2>
+    
+        <button onclick="myFunction()">Move</button>
+        <p>Click "Move" to insert the red span after the header.</p>
+    
+        <span id="mySpan" style="color:red">My span</span>
+        <h2 id="myH2">My Header</h2>
+        <--js code-->
+            function myFunction() {
+        const span = document.getElementById("mySpan");
+        const h2 = document.getElementById("myH2");
+        h2.insertAdjacentElement("afterend", span);
+        }
+            `
+            showCodeByIdVariable('insert-1', code_1)
+    </script>
+<!-- common js -->
+</body>
+</html>

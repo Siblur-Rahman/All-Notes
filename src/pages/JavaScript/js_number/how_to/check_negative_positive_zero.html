@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="myContainer">
+    <h2>How To Check If Number Is Negative, Positive, OR Zero In JavaScript <a href="https://www.devbabu.com/docs/js/how-to-check-if-number-is-negative-or-positive-in-javascript.html" target="_blank">details</a></h2>
+
+    <!-- 1. Using Comparison Operators -->
+    <h2 class="accordion">1. Using Comparison Operators</h2>
+    <div class="panel">
+        <label for="number1">Provide Number</label>
+        <input type="number" id="number1"><button id="btn1">Click to Get Output</button>
+        <div class="output">Output: <span id="output1" class="itc"></span></div>
+            <script>
+                function check1(number1){
+                    // Logical code
+                if(number1 > 0){
+                    return `${number1} is a positive number`
+                } else if(number1 < 0){
+                    return `${number1} is a negative number`
+                }else if(number1 === 0){
+                    return `${number1} is zero`
+                }else{
+                    return `Please provide a number`
+                }
+            }
+            // dom code
+            const output1 = document.getElementById("output1");
+            
+            const btn1 = document.getElementById("btn1");
+            btn1.addEventListener("click", function(){
+                const number1 = document.getElementById("number1").value;
+                output1.innerHTML = check1(number1);
+                // output1.innerHTML = 15;
+            })
+            </script>
+        <p class="accordion">Code-1</p>
+        <pre class="panel">
+        </pre>
+    </div>
+    
+    <!--2. Using the Sign Function  -->
+    <p class="accordion">2. Using the Sign Function</p>
+    <div class="panel">
+        <label for="number1">Provide Number</label>
+        <input type="number" id="number1"><button id="btn1">Click to Get Output</button>
+        <div class="output">Output: <span id="output1" class="itc"></span></div>
+            <script>
+               
+            </script>
+            <!--Showing Code  -->
+        <p class="accordion">Code-1</p>
+        <pre class="panel">
+        </pre>
+    </div>
+
+    <!-- 3. Using Ternary Operator -->
+    <p class="accordion">3. Using Ternary Operator</p>
+    <div class="panel">
+        <label for="number1">Provide Number</label>
+        <input type="number" id="number1"><button id="btn1">Click to Get Output</button>
+        <div class="output">Output: <span id="output1" class="itc"></span></div>
+            <script>
+               
+            </script>
+            <!--Showing Code  -->
+        <p class="accordion">Code-1</p>
+        <pre class="panel">
+        </pre>
+    </div>
+
+    <!-- 4. Using Object Mapping -->
+    <p class="accordion">4. Using Object Mapping</p>
+    <div class="panel">
+        <label for="number1">Provide Number</label>
+        <input type="number" id="number1"><button id="btn1">Click to Get Output</button>
+        <div class="output">Output: <span id="output1" class="itc"></span></div>
+            <script>
+               
+            </script>
+            <!--Showing Code  -->
+        <p class="accordion">Code-1</p>
+        <pre class="panel">
+        </pre>
+    </div>
+
+</div><!-- End myContainer -->
+    <script src="script.js"></script>
+</body>
+</html>
