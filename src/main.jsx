@@ -7,6 +7,9 @@ import {
 import './index.css'
 import Home from './pages/Home';
 import JavaScript from './pages/JavaScript/JavaScript';
+import CodeProvider from './CodeProvider';
+import ReactNote from './pages/React/ReactNote';
+import Tools from './pages/Tools/Tools';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,12 +19,22 @@ const router = createBrowserRouter([
         path:"/JavaScript",
         element: <JavaScript/>,
       },
+      {
+        path:"/tools",
+        element: <Tools/>,
+      },
+      {
+        path:"/react",
+        element: <ReactNote/>,
+      },
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CodeProvider>
+      <RouterProvider router={router} />
+    </CodeProvider>
   </React.StrictMode>,
 )

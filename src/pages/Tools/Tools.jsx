@@ -1,27 +1,26 @@
 import { useContext, useEffect } from "react";
-import JSLeftBar from "./JSLeftBar";
 import { ToolsForCode } from "../../CodeProvider";
-import ArrowFunction from "./function/ArrowFunction";
-import {Active } from "../../components/CommonJS/CommonJS";
+import {Active, Accordion }  from "../../components/CommonJS/CommonJS";
+import ToolsLeftbar from "./ToolsLeftbar";
+import PageSetup from "./PageSetup";
 
-
-
-const JavaScript = () => {
+const Tools = () => {
     const {curlyBraceOpen, curlyBraceClosed, greaterThan,
         lessThan} = useContext(ToolsForCode)
         useEffect(() =>{
             Active();
-        },[])
+            Accordion();
+        })
     return (
         <>
         <div className="leftBar">
-            <JSLeftBar/>
+            <ToolsLeftbar/>
         </div>    
         <div className="content">
-           <ArrowFunction/>
+           <PageSetup/>
         </div>    
         </>
     );
 };
 
-export default JavaScript;
+export default Tools;

@@ -1,6 +1,7 @@
 
 // Accordion Start
-var acc = document.getElementsByClassName("accordion");
+export const Accordion = ()=>{
+  var acc = document.getElementsByClassName("accordion");
 var accCount;
 
 for (accCount = 0; accCount < acc.length; accCount++) {
@@ -14,12 +15,10 @@ for (accCount = 0; accCount < acc.length; accCount++) {
     } 
   });
 }
+}
 
-
-
-
-const Active = ()=>{
-  var link = document.getElementsByClassName("link");
+export const Active = ()=>{
+var link = document.getElementsByClassName("link");
 var linkCount;
 
 for (linkCount = 0; linkCount < link.length; linkCount++) {
@@ -32,4 +31,4 @@ for (linkCount = 0; linkCount < link.length; linkCount++) {
   });
 }
 }
-export default Active;
+// export default Active;

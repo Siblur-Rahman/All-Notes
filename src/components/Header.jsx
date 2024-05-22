@@ -7,10 +7,10 @@ const Header = () => {
                 <NavLink  to={'/'}>Home</NavLink>
                 <NavLink  to={'/P-Hero'}>P-HERO</NavLink>
                 <NavLink  to={'/JavaScript'}>JavaScript</NavLink>
-                <NavLink  to={'/ReactNote'}>React</NavLink>
+                <NavLink  to={'/react'}>React</NavLink>
                 <NavLink  to={'/HTML'}>HTML</NavLink>
                 <NavLink  to={'/CSS'}>CSS</NavLink>
-                <NavLink  to={'/'}></NavLink>
+                <NavLink  to={'/tools'}>Tools</NavLink>
                 <NavLink  to={'/'}></NavLink>
                 <NavLink  to={'/'}></NavLink>
                 <NavLink  to={'/'}></NavLink>
