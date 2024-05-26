@@ -65,17 +65,6 @@ const PageSetup = () => {
             {leftbar}
             </pre>
         </div>
-<button id="1" className="accordion">1. Suntax, declaration & Call</button>
-<div className="panel">
-   <h3>Syntax</h3>
-   <pre className="code_p">
-      function name(parameter1, parameter2, parameter3) {
-   // code to be executed
-   }
-   </pre>
-   <h4>Function declaration</h4>
-
-   </div>
         </>
     );
 };

@@ -7,10 +7,7 @@
    <!-- topics header -->
    <?php include'./function_header.php'?>
 <div id="main_content"><!-- Start Main Content -->
-    <h2>JavaScript Arrow Function<span><a href="https://www.w3schools.com/js/js_arrow_function.asp" target="_blank"> Details</a></span></h2>
-
-    <h2>10. 23-5 Arrow function, multiple parameter, function body</h2>
-   <h2>Arrow function</h2>
+    
    <div class="code_p show-code" id="insert-1">
      
    </div>

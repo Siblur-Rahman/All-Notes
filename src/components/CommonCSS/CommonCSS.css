@@ -9,6 +9,12 @@
     --activeBG-2: #3374e4;
     --activeBG-3: #caccd0;
 }
+/* tag */
+p{
+  /* font-family: "Roboto", sans-serif;; */
+  font-weight: 200 !important;
+}
+/* some class */
 .header {
     display: flex;
     justify-content: space-evenly;
@@ -39,6 +45,16 @@
 }
 .m-auto{
   margin: auto;
+}
+.mt-5px{
+  margin-top: 5px;
+}
+.mt-10px{
+  margin-top: 10px;
+}
+.my-10px{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .active{
     background-color: var(--activeBG-1);
@@ -73,15 +89,38 @@
     padding: 0px 10px 20px 10px;
     overflow: auto;
 }
+/* Color */
+.greenyellow{
+  color: greenyellow !important;
+}
+.black{
+  color: black;
+}
+.blue{
+  color: blue;
+}
 .code{
   width: auto;
-  background-color: #fff;
+  /* background-color: #fff; */
   background: rgb(188, 170, 170);
   color: #000;
   padding: 8px 12px;
   border-left: 4px solid #4CAF50;
   word-wrap: break-word;
-  font-size: 20px;
+  font-size: 25px;
+}
+.npmCode{
+  width: auto;
+  /* background-color: #fff; */
+  background: rgb(63, 57, 57);
+  color: #f5f0f0;
+  padding: 8px 12px;
+  border-left: 4px solid #4CAF50;
+  word-wrap: break-word;
+  font-size: 25px;
+}
+.overflow-auto{
+  overflow: auto;
 }
 .to_jump{
 	display: inline-block;
@@ -89,21 +128,21 @@
     text-decoration: none;
   }
   /* Some Tag */
-  h2 {
+  /* h2 {
     color: red;
     font-size: 1.5em !important;
     font-weight: 600 !important;
     margin-bottom: 15px !important;
-}
+} */
 
-h2 a, h3 a {
+/* h2 a, h3 a {
 font-size: 30px;
 color: #002bff !important;
 text-decoration: none;
 }
 h1, h2{
 margin-top: 0;
-}
+} */
    /* Accordion */
 .accordion {
     cursor: pointer;
