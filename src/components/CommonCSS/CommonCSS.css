@@ -34,7 +34,8 @@ p{
 .header a{
     color: aliceblue;
     text-decoration: none;
-
+    padding: 0 5px;
+    border-radius: 5px;
     /* margin-left: 10px; */
 }
 .heading{
@@ -98,6 +99,12 @@ p{
 }
 .blue{
   color: blue;
+}
+.read{
+  color: rgb(255, 174, 0);
+}
+.mark{
+  background: #d0e98c;
 }
 .code{
   width: auto;

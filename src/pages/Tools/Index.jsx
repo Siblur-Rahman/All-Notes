@@ -5,9 +5,9 @@ const Index = () => {
             <span className="to_jump" id="index"></span>
 <h3 className="heading center">csm-11-1st</h3>
 <div className="code">
-    <p>font-setup to tailwind- 7:00 p-2</p>
-    <p>navbar- 42:3  p-2</p>
-    <p>Login- 45:12  p-2</p>
+    <p>font-setup to tailwind- 7:00 p-3</p>
+    <p>navbar- 42:3  p-3</p>
+    <p>Login- 45:12  p-3</p>
     <p>Regis - 0:30  p-3</p>
     <p>Banner- 13:40   p-3</p>
     <p>Tabs - 32:32  p-3</p>
@@ -30,7 +30,7 @@ const Index = () => {
     <p>bids 23:25</p>
     <p>navigate 26:00 p-1</p>
     <p>data fetch multiple condition & myBids 32:34 p-1</p>
-    <p> condition for button 42:49 p-</p>
+    <p> condition for button 42:49 p-1</p>
     <p>put & patch 00:00 patch 24:00 p-2</p>
     <p>important 33:00 p-2</p>
     <p>JWT login page 41:00 p-2</p>
@@ -61,6 +61,26 @@ const Index = () => {
     <p>Order page 65-5 :00 </p>
     <p>React Tab 65-5 4:40 </p>
     <p>React Tab index 65-7 0:00 </p>
+    <p>React pagination 65-9 0:00 </p>
+    <p>login 66-1 0:00 </p>
+    <p>useLocation 66- 0:00 </p>
+    <p>Loin 66-1 0:00 </p>
+    <p>Capcha 66-2 0:00 </p>
+    <p> 66- 0:00 </p>
+    <p> 66- 0:00 </p>
+</div>
+<h2 className="heading">Csm-12-1</h2>
+<div>
+    <p>TanStackReackQuery 5:50  p-3</p>
+    <p>Conditional Block Render 23:30   p-3</p>
+    <p>Clikable Category & overflow-x-auto 0:00  p-4</p>
+    <p> set Query to url 5:00 p-4</p>
+    <p>useSearchParams 16:50  p-4</p>
+    <p> important 29:00 p-4</p>
+    <p>SignUp page 5:25  p-5</p>
+    <p> image file grap 10:30 p-5</p>
+    {/* 30:00 */}
+    <p>  p-</p>
 </div>
 01. https://i.ibb.co/Jps0zfw/fashin-1.jpg
 02. https://i.ibb.co/Ld5xZYx/business-1.jpg

@@ -1,14 +1,21 @@
 [
+    {
+        "page_title":"React Notes",
+        "topic":["React Props"]
     
-        {
-            "page_title":"Components",
-            "topic":["React Helmet Async","React Parallax"]
+    },   
+    {
+        "page_title":"Components",
+        "topic":["React Helmet Async","React Parallax","Recaptcha"]
 
-        },
-        {
-            "page_title":"React Hooks",
-            "topic":["Custom hook","useState"]
-
-        }
+    },
+    {
+        "page_title":"React Hooks",
+        "topic":["Custom hook","useState"]
+    },
+    {
+        "page_title":"React API",
+        "topic":["TanStack/Reack-Query",""]
+    }
 
 ]

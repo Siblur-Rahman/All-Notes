@@ -1,16 +1,12 @@
 import { useContext, useEffect } from "react";
-import ReactLeftbar from "./ReactLeftbar";
-import Theme from "./Theme";
+import BackendLeftbar from "./BackendLeftbar";
 import { ToolsForCode } from "../../CodeProvider";
 import  {Active, Accordion } from "../../components/CommonJS/CommonJS";
-import Components from "./Components/Components";
-import Hooks from "./reactHooks/Hooks";
-// import PropsReact from "./totics/Props";
-import Topics from "./totics/Topics";
-import ReactAPI from "./ReactAPI/ReactAPI";
+import ServerBasic from "./CRUD/ServerBasic";
+
 // import HelmetAsync from "./Components/HelmetAsync";
 
-const ReactNote = () => {
+const Backend = () => {
     useEffect(() =>{
         Active();
         Accordion();
@@ -20,18 +16,13 @@ const ReactNote = () => {
     return (
         <>
         <div className="leftBar">
-            <ReactLeftbar/>
+            <BackendLeftbar/>
         </div>    
         <div className="content">
-            <Topics/>
-           <Theme/>
-           <Components/>
-           <Hooks/>
-           <ReactAPI/>
-           {/* <ReactHelmetAsync/> */}
+            <ServerBasic/>
         </div>    
         </>
     );
 };
 
-export default ReactNote;
+export default Backend;
