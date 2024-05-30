@@ -1,17 +1,23 @@
 import { useEffect } from "react";
 import useGetData from "../../hooks/useGetData";
-import { Active } from "../../components/CommonJS/CommonJS";
+import { Accordion, Active } from "../../components/CommonJS/CommonJS";
 
 
 const ReactLeftbar = () => {
     const [getdata]=useGetData('reactLeftbar.json');
     useEffect(() =>{
         Active();
-        // Accordion();
+        Accordion();
     })
     return (
         
         <>
+        {/* Accordion */}
+        <div className="accordion">Accordion</div>
+        <div className="panel">
+            Accordion Panel
+        </div>
+
             {
                 getdata.map(data=><div key={data.page_title}>
                     <div className="heading">{data.page_title}</div>
@@ -20,9 +26,9 @@ const ReactLeftbar = () => {
                     }
                 </div>)
             }
+
         </>
     );
 };
 
 export default ReactLeftbar;
-{/* <a key={data.topic} href="#{data.topic}" className="link">{data.topic}</a> */}

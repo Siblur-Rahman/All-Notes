@@ -2,7 +2,7 @@
 const Index = () => {
     return (
         <div>
-            <span className="to_jump" id="index"></span>
+            <span className="to_jump" id="Index"></span>
 <h3 className="heading center">csm-11-1st</h3>
 <div className="code">
     <p>font-setup to tailwind- 7:00 p-3</p>
@@ -65,11 +65,61 @@ const Index = () => {
     <p>login 66-1 0:00 </p>
     <p>useLocation 66- 0:00 </p>
     <p>Loin 66-1 0:00 </p>
-    <p>Capcha 66-2 0:00 </p>
-    <p> 66- 0:00 </p>
-    <p> 66- 0:00 </p>
+    <p>Capcha 66-2 0:00 66-7 7:20 </p>
+    <p>AuthProvider 66-3 8:30 </p>
+    <p>Formik Form 66-5 0:00 </p>
+    <p>password strength regax javascript 66-6 1:28 </p>
+    <p> Logout 66-7 0:00 </p>
+    <p> Sweet Alert And Some Bug Fix. 66-7 3:24 </p>
+    <p> Private Route And Redirect User After Login 66-8 0:00 </p>
+    <p> Sign Up 66-9 0:00 </p>
+    <p> Update User Profile 66-9 3:00 </p>
+
+<h3 className="heading">67-1 Module Introduction And Cart Icon Setup</h3>
+        <p>Icons 67-1 6:55</p>
+<h3 className="heading">67-2</h3>
+        <p>CRUD Operation from MongoDB Doc 67-2  4:30:</p>
+        <p>UseAuth hook 67-2  7:30</p>
+        <p>sent use to login pang 67-2  11:00</p>
+<h3 className="heading">67-3</h3>
+        <p>UseNavigate with state, useLocation 67-3 :</p>
+        <p>Axios 67-3  7:40</p>
+        <p> 67-  :</p>
+        <p> 67-  :</p>
+        <p> 67-  :</p>
+<h3 className="heading">67-4 Simple Overview Of React Query And Load Data</h3>
+        <p>TanstStack Query 67-4 4:50  :</p>
+<h3 className="heading">67-5 Show Add To Cart Count Using Refetch</h3>
+<h3 className="heading">67-6 Crate Dashboard Route And Dashboard Navigation</h3>
+        <p>Drower 67-6  00:00</p>
+        <p>set Icons in Dashbord 67-6 00:00</p>
+<h3 className="heading">67-7 Cart Data From Custom Hook And Calculate Total Price</h3>
+        <p>Calculate with reduce 67-7  5:10</p>
+<h3 className="heading">67-8 Delete cart item and sync data using refetch</h3>
+        <p>delete 67-8  6:15</p>
+        <p>refetch 67-8  10:45</p>
+<h3 className="heading">68-1 Save User Data</h3>
+<h3 className="heading">68-2 Google Sign And When To Save User Info</h3>
+<h3 className="heading">68-3 Save User If He Doesn’t Exists In The Database</h3>
+<h3 className="heading">68-4 Load All Users On The Dashboard Page</h3>
+        <p>TanStack Query 68-4 10:30</p>
+<h3 className="heading">68-5 Display All Users And Create Make Admin API</h3>
+        <p>Delete 68-5 2:40</p>
+        <p>Make Admin API 68-5 8:45</p>
+<h3 className="heading">68-6 Make User Admin And Install JWT</h3>
+        <p>68- :</p>
+<h3 className="heading">68-</h3>
+        <p>68- :</p>
+<h3 className="heading">67-9</h3>
+        <p> 67-  :</p>
+        <p> 67-  :</p>
+        <p> 67-  :</p>
+        <p> 67-  :</p>
+        <p> 67-  :</p>
 </div>
-<h2 className="heading">Csm-12-1</h2>
+
+
+<h3 className="heading">Csm-12-1</h3>
 <div>
     <p>TanStackReackQuery 5:50  p-3</p>
     <p>Conditional Block Render 23:30   p-3</p>

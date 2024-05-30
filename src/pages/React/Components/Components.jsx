@@ -1,6 +1,8 @@
 import HelmetAsync from "./HelmetAsync";
 import ParallaxReact from './ParallaxReact';
-import Recaptcha from "./Recaptcha";
+import CaptchaReact from "./CaptchaReact";
+import Form from "./Form";
+import Icon from "./Icon";
 
 const Components = () => {
     return (
@@ -9,7 +11,9 @@ const Components = () => {
             <p>Carosel 64-3</p> 
             <HelmetAsync/>
             <ParallaxReact/>
-            <Recaptcha/>
+            <CaptchaReact/>
+            <Form/>
+            <Icon/>
         </div>
     );
 };

@@ -2,11 +2,16 @@
     {
         "page_title":"React Notes",
         "topic":["React Props"]
+        
+    },   
+    {
+        "page_title":"Athintication",
+        "topic":["firebase.config","AuthProvider", "SignUp Page"]
     
     },   
     {
         "page_title":"Components",
-        "topic":["React Helmet Async","React Parallax","Recaptcha"]
+        "topic":["React Helmet Async","React Parallax","Recaptcha","Icons"]
 
     },
     {
@@ -16,6 +21,11 @@
     {
         "page_title":"React API",
         "topic":["TanStack/Reack-Query",""]
+    },
+    {
+        "page_title":"Route",
+        "topic":["Private"]
+
     }
 
 ]

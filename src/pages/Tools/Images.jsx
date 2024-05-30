@@ -5,7 +5,7 @@ const image =
 <img src={name} alt="">`
 const Images =()=>{
     return(
-        <div id='image' className='mt-5px to_jum'>
+        <div id='Images' className='mt-5px to_jum'>
             <h2 className='center'>Image</h2>
             <pre className="code">
                 {image}

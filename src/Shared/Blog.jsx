@@ -1,23 +1,23 @@
 import PropTypes from 'prop-types';
+
+
+
 const Blog = ({topic,mark, fileName, npmCode, heading, define, defineWithIndex, url, video, time, code}) => {
+    console.log(defineWithIndex)
     return (
         <>
         {mark && <h2 className='mark'>{mark}</h2>
             
         }
-        {topic && <h2 className="to_jump my-10px" id={topic}>{topic && topic}<span className="blue"> {time}
+        {topic && <h2 className="to_jump mt-10px" id={topic}>{topic && topic}<span className="blue"> {time}
         </span>{url && <a href={url} target="_blank"> Detals</a>}</h2>}
-        {npmCode && <div className="npmCode">{npmCode}</div>}
+        {npmCode && <div className="npmCode my-10px">{npmCode}</div>}
         {define && <p>{define}</p>}
+        <br />
         {
-            console.log(defineWithIndex)
+            defineWithIndex &&  defineWithIndex.map((item, index )=><p key={index}>{item}</p>)
         }
-        {
-            // defineWithIndex.map((item, index )=><p key={index}>{item}</p>)
-        }
-        {/* {defineWithIndex.map((item, index) =><p key={index}>{index+1}. {item}</p>)} */}
-        {/* {defineWithIndex && <div>{defineWithIndex.map((value, index) => {<p>{index+1}. {value}</p>})}</div>} */}
-        {code && <pre className="code mt-5px">
+        {code && <pre className="code">
             {fileName && <p className='read'>{fileName}</p>}
             {code}
         </pre>

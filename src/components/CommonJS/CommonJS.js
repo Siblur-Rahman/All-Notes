@@ -2,7 +2,7 @@
 // Accordion Start
 export const Accordion = ()=>{
   var acc = document.getElementsByClassName("accordion");
-var accCount;
+  var accCount;
 
 for (accCount = 0; accCount < acc.length; accCount++) {
   acc[accCount].addEventListener("click", function() {

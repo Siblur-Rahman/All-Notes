@@ -12,7 +12,6 @@ const CustomHook = () => {
             url={'https://www.w3schools.com/react/react_customhooks.asp'}
             time={'64-3 6:00'}
             defineWithIndex={items}
-            // defineWithIndex={["Hooks are reusable functions.","When you have component logic that needs to be used by multiple components, we can extract that logic to a custom Hook."]}
             code={
 `
 import { useEffect, useState } from "react";
@@ -34,8 +33,9 @@ return [menu, loading]
 export default useMenu;
 `
             }></Blog>
-            <div className="accordion">Accordion</div>
-            <div className="panel">panel</div>
+            {
+            // items.map((item, index )=><p key={index}>{item}</p>)
+            }
         </div>
     );
 };
