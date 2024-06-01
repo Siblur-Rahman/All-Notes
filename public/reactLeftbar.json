@@ -6,7 +6,7 @@
     },   
     {
         "page_title":"Athintication",
-        "topic":["firebase.config","AuthProvider", "SignUp Page"]
+        "topic":["firebase.config","AuthProvider", "SignUp Page", "JSON Web Token (JWT)"]
     
     },   
     {
