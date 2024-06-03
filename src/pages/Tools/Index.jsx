@@ -109,7 +109,7 @@ const Index = () => {
 <h3 className="heading">68-6 Make User Admin And Install JWT</h3>
 <h3 className="heading">68-7 (Recap) Create A JWT Token And Save It On Local Storage</h3>
         <p>68- :</p>
-<h3 className="heading">68-8</h3>
+<h3 className="heading">Verify Token And Axios Interceptor</h3>
         <p> 67-  :</p>
 <h3 className="heading">68-8</h3>
         <p> 67-  :</p>

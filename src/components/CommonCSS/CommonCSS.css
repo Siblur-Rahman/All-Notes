@@ -110,12 +110,13 @@ p{
 .code{
   width: auto;
   /* background-color: #fff; */
-  background: rgb(188, 170, 170);
-  color: #000;
+  background: rgb(1, 9, 19);
+  color: #f7f4f1;
   padding: 8px 12px;
   border-left: 4px solid #4CAF50;
   word-wrap: break-word;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 100;
 }
 .npmCode{
   width: auto;

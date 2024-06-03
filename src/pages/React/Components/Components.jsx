@@ -3,6 +3,7 @@ import ParallaxReact from './ParallaxReact';
 import CaptchaReact from "./CaptchaReact";
 import Form from "./Form";
 import Icon from "./Icon";
+import DatePicker from "./DatePicker";
 
 const Components = () => {
     return (
@@ -14,6 +15,7 @@ const Components = () => {
             <CaptchaReact/>
             <Form/>
             <Icon/>
+            <DatePicker/>
         </div>
     );
 };

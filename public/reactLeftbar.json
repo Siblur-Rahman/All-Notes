@@ -11,7 +11,7 @@
     },   
     {
         "page_title":"Components",
-        "topic":["React Helmet Async","React Parallax","Recaptcha","Icons"]
+        "topic":["React Helmet Async","React Parallax","Recaptcha","Icons","Date Picker"]
 
     },
     {
@@ -20,7 +20,7 @@
     },
     {
         "page_title":"React API",
-        "topic":["TanStack/Reack-Query",""]
+        "topic":["TanStack/Reack-Query","Axios"]
     },
     {
         "page_title":"Route",
