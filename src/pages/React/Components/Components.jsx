@@ -4,6 +4,8 @@ import CaptchaReact from "./CaptchaReact";
 import Form from "./Form";
 import Icon from "./Icon";
 import DatePicker from "./DatePicker";
+import SweetAlert from "./SweetAlert";
+// import SweetAlert from "./SweetAlert";
 
 const Components = () => {
     return (
@@ -16,6 +18,7 @@ const Components = () => {
             <Form/>
             <Icon/>
             <DatePicker/>
+            <SweetAlert/>
         </div>
     );
 };

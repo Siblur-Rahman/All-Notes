@@ -6,12 +6,12 @@
     },   
     {
         "page_title":"Athintication",
-        "topic":["firebase.config","AuthProvider", "SignUp Page", "JSON Web Token (JWT)"]
+        "topic":["firebase.config","AuthProvider", "SignUp Page", "JSON Web Token (JWT)", "Cookie"]
     
     },   
     {
         "page_title":"Components",
-        "topic":["React Helmet Async","React Parallax","Recaptcha","Icons","Date Picker"]
+        "topic":["React Helmet Async","React Parallax","Recaptcha","Icons","Date Picker","Sweetalert"]
 
     },
     {
@@ -20,7 +20,7 @@
     },
     {
         "page_title":"React API",
-        "topic":["TanStack/Reack-Query","Axios"]
+        "topic":["TanStack/Reack-Query","Axios","Axios Instance"]
     },
     {
         "page_title":"Route",

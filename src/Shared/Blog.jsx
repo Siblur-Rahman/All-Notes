@@ -8,17 +8,23 @@ const Blog = ({topic,mark, fileName, npmCode, heading, define, defineWithIndex, 
         <>
         {mark && <h2 className='mark'>{mark}</h2>
             
-        }
+            }
         {topic && <h2 className="to_jump mt-10px" id={topic}>{topic && topic}<span className="blue"> {time}
         </span>{url && <a href={url} target="_blank"> Detals</a>}</h2>}
-        {npmCode && <div className="npmCode my-10px">{npmCode}</div>}
+        {/* {
+            fileName&& <h2 className='red'>{fileName}</h2>
+        } */}
+        {npmCode && <div className="npmCode my-10px">
+           { fileName&& <p className='red'>{fileName}</p>}
+            {npmCode}
+            </div>}
         {define && <p>{define}</p>}
         <br />
         {
             defineWithIndex &&  defineWithIndex.map((item, index )=><p key={index}>{item}</p>)
         }
         {code && <pre className="code">
-            {fileName && <p className='read'>{fileName}</p>}
+            {fileName && <p className='red'>{fileName}</p>}
             {code}
         </pre>
         }

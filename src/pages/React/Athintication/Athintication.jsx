@@ -1,3 +1,4 @@
+import Cookie from "./Cookie";
 import JWToken from "./JWToken";
 import SignUp from "./SignUp";
 
@@ -6,6 +7,7 @@ const Athintication = () => {
         <div>
             <SignUp/>
             <JWToken/>
+            <Cookie/>
         </div>
     );
 };

@@ -35,12 +35,14 @@ const Index = () => {
     <p>important 33:00 p-2</p>
     <p>JWT login page 41:00 p-2</p>
     <p>JWT register page 1:13:26 p-2</p>
-    <p>hook 42:54 p-3</p>
-    <p>intercepto 56:10 p-3</p>
-    <p>Tanstack query 1:15:10 p-</p>
+    <p>Custom useAuth hook 42:54 p-3</p>
+    <p>Custom useAxiosSecure hook 47:45 p-3</p>
+    <p>interceptors 56:10 p-3</p>
+    <p>Tanstack query 1:15:10 p-3</p>
     <p> : p-</p>
     42:02 p-4
 </div>
+<h2 className="center heading">milestoe-12</h2>
 <div className="code">
     <p>Carosel 64-3</p>
     <p>opacity& max-width 64-3 10:00 </p>
@@ -111,14 +113,37 @@ const Index = () => {
         <p>68- :</p>
 <h3 className="heading">Verify Token And Axios Interceptor</h3>
         <p> 67-  :</p>
-<h3 className="heading">68-8</h3>
-        <p> 67-  :</p>
-        <p> 67-  :</p>
-        <p> 67-  :</p>
-        <p> 67-  :</p>
-        <p> 67-  :</p>
+<h3 className="heading">68-9</h3>
+        <p>Custom hook for Admin Jwt 68-9  9:30</p>
+<h3 className="heading">68-10  Make User Api Secure Using Verify Admin</h3>
+        <p>Admin Route 68-10  7:17</p>
+        <p>TanStack Query 68-10  7:50</p>
 </div>
-
+<h2 className="heading center">Module 69: Final Project Part-6</h2>
+<div className="code">
+        <h3 className="heading">69-1 (Recap) Why We Use React-Query, Axios And React Hook Form</h3>
+        <p>Recap JWT 69-1 0:00-</p>
+        <p>TanStack Query 69-1 5:00-</p>
+        <p>Custom useAxiosSecure hook 69-1 6:35</p>
+        <p>interceptors 69-1 8:00</p>
+        <p> useAdmin 69-1 8:55</p>
+        <p> Admin Route 69-1 9:45</p>
+        <h3 className="heading">69-2 Create Add Item Form Using React Hook Form</h3>
+        <p>Add Items 69-2 00:00</p>
+        <p>React Hook Form 69-2 08:00</p>
+        <h3 className="heading"></h3>
+        <p> 69- :</p>
+        <h3 className="heading"></h3>
+        <p> 69- :</p>
+        <h3 className="heading"></h3>
+        <p> 69- :</p>
+        <h3 className="heading"></h3>
+        <p> 69- :</p>
+        <h3 className="heading"></h3>
+        <p> 69- :</p>
+        <h3 className="heading"></h3>
+        <p> 69- :</p>
+</div>
 
 <h3 className="heading">Csm-12-1</h3>
 <div>

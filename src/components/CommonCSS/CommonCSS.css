@@ -58,6 +58,9 @@ p{
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.p-10px{
+  padding: 10px;
+}
 .active{
     background-color: var(--activeBG-1);
     color: var(--activeColor);
@@ -101,8 +104,8 @@ p{
 .blue{
   color: blue;
 }
-.read{
-  color: rgb(255, 174, 0);
+.red{
+  color: red;
 }
 .mark{
   background: #d0e98c;
@@ -127,6 +130,18 @@ p{
   border-left: 4px solid #4CAF50;
   word-wrap: break-word;
   font-size: 25px;
+}
+.topic-border{
+  border: 5px solid red;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.topic{
+  border: 5px solid red;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
 }
 .overflow-auto{
   overflow: auto;

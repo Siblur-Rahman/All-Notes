@@ -2,13 +2,13 @@ import Blog from '../../../Shared/Blog';
 
 const SignUp = () => {
     return (
-        <div>
+        <div className='topic'>
             <Blog
             topic={'SignUp Page'}
             />
-            <Blog
+            {/* <Blog
             topic={'Password'}
-            />
+            /> */}
             <Blog
             topic={'password strength regax javascript'}
             time={'66-6 1:28'}
