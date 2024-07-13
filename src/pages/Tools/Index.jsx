@@ -3,6 +3,27 @@ const Index = () => {
     return (
         <div>
             <span className="to_jump" id="Index"></span>
+<h2 className="center heading">milestoe-09</h2>
+<div className="code">
+<h3>53_5-1 Install Node-Express And Run Your First Node Server</h3>
+<p> 53_5-1-  :</p>
+<p> 53_5-2-  7:50:</p>
+</div>
+<h2 className="center heading">milestoe-10</h2>
+<div className="code">
+        <h3>54-2 Client And Server Connection With Request And Response</h3>
+<p>Post API 54-2-  7:50:</p>
+</div>
+<h3 className="heading center">React Core Concept</h3>
+<div className="code">
+    <p>UseState- 18:15 p-1</p>
+    <p>useEffect- 27:15 p-2</p>
+    <p>- : p-</p>
+    <p>- : p-</p>
+    <p>- : p-</p>
+    <p>- : p-</p>
+    <p>- : p-</p>
+</div>
 <h3 className="heading center">csm-11-1st</h3>
 <div className="code">
     <p>font-setup to tailwind- 7:00 p-3</p>
@@ -20,6 +41,7 @@ const Index = () => {
     <p>date piker 9:4 p-5</p>
     <p>callection 12:52 p-5</p>
     <p>Add job 23:50 p-5</p>
+    <p>date short format 36:42 p-5</p>
     <p>posted job 44:50 p-5</p>
     <p>delete job 55:45 p-5</p>
     <p>update 7:27 p-6</p>
@@ -109,6 +131,7 @@ const Index = () => {
         <p>Delete 68-5 2:40</p>
         <p>Make Admin API 68-5 8:45</p>
 <h3 className="heading">68-6 Make User Admin And Install JWT</h3>
+
 <h3 className="heading">68-7 (Recap) Create A JWT Token And Save It On Local Storage</h3>
         <p>68- :</p>
 <h3 className="heading">Verify Token And Axios Interceptor</h3>
@@ -128,16 +151,18 @@ const Index = () => {
         <p>interceptors 69-1 8:00</p>
         <p> useAdmin 69-1 8:55</p>
         <p> Admin Route 69-1 9:45</p>
+
         <h3 className="heading">69-2 Create Add Item Form Using React Hook Form</h3>
         <p>Add Items 69-2 00:00</p>
         <p>React Hook Form 69-2 08:00</p>
-        <h3 className="heading"></h3>
-        <p> 69- :</p>
-        <h3 className="heading"></h3>
-        <p> 69- :</p>
-        <h3 className="heading"></h3>
-        <p> 69- :</p>
-        <h3 className="heading"></h3>
+
+        <h3 className="heading">69-3 Design Form Using Daisy Ui And React Hook Form</h3>
+        
+        <h3 className="heading">69-4 Upload Image To Image Hosting Server Imgbb And Get Image Url</h3>
+        <p>Using Image Api 69-4 3:45</p>
+        <h3 className="heading">70-2 Install Stripe, Stripe For React And Create Card Element</h3>
+        <p>Checkout page 70-2- 7:2</p>
+        <h3 className="heading">70-3 Create Stripe Account And Use Publishable Key</h3>
         <p> 69- :</p>
         <h3 className="heading"></h3>
         <p> 69- :</p>
@@ -145,8 +170,8 @@ const Index = () => {
         <p> 69- :</p>
 </div>
 
-<h3 className="heading">Csm-12-1</h3>
-<div>
+<h2 className="heading center">Csm-12-1</h2>
+<div className="code">
     <p>TanStackReackQuery 5:50  p-3</p>
     <p>Conditional Block Render 23:30   p-3</p>
     <p>Clikable Category & overflow-x-auto 0:00  p-4</p>

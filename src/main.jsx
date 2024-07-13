@@ -11,6 +11,9 @@ import CodeProvider from './CodeProvider';
 import ReactNote from './pages/React/ReactNote';
 import Tools from './pages/Tools/Tools';
 import Backend from './pages/Backend/Backend';
+import NextJSNotes from './pages/NextJS/NextJSNotes';
+import Job from './pages/Job/Job';
+import File from './pages/file/File';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,8 +32,20 @@ const router = createBrowserRouter([
         element: <ReactNote/>,
       },
       {
+        path:'/nextjs',
+        element:<NextJSNotes/>
+      },
+      {
         path:"/backend",
         element: <Backend/>,
+      },
+      {
+        path:"/job",
+        element: <Job/>,
+      },
+      {
+        path:"/file",
+        element: <File/>,
       },
     ]
   },

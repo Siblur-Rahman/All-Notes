@@ -118,8 +118,9 @@ p{
   padding: 8px 12px;
   border-left: 4px solid #4CAF50;
   word-wrap: break-word;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 100;
+  overflow: auto;
 }
 .npmCode{
   width: auto;

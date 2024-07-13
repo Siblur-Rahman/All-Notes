@@ -3,17 +3,16 @@ import PropTypes from 'prop-types';
 
 
 const Blog = ({topic,mark, fileName, npmCode, heading, define, defineWithIndex, url, video, time, code}) => {
-    console.log(defineWithIndex)
     return (
         <>
-        {mark && <h2 className='mark'>{mark}</h2>
+        {mark && <h2 className='mark text-2xl'>{mark}</h2>
             
             }
-        {topic && <h2 className="to_jump mt-10px" id={topic}>{topic && topic}<span className="blue"> {time}
+        {topic && <h2 className="to_jump mt-10px red text-2xl" id={topic}>{topic && topic}<span className="blue"> {time}
         </span>{url && <a href={url} target="_blank"> Detals</a>}</h2>}
-        {/* {
-            fileName&& <h2 className='red'>{fileName}</h2>
-        } */}
+        {
+            heading && <h2 className='red text-2xl'>{heading}</h2>
+        }
         {npmCode && <div className="npmCode my-10px">
            { fileName&& <p className='red'>{fileName}</p>}
             {npmCode}

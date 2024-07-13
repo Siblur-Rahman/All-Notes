@@ -1,5 +1,15 @@
 [
     {
+        "page_title":"",
+        "topic":["React Project SetUp"]
+
+    },
+    {
+        "page_title":"Route",
+        "topic":["React Router","Private"]
+
+    },
+    {
         "page_title":"React Notes",
         "topic":["React Props"]
         
@@ -11,21 +21,16 @@
     },   
     {
         "page_title":"Components",
-        "topic":["React Helmet Async","React Parallax","Recaptcha","Icons","Date Picker","Sweetalert"]
+        "topic":["React Helmet Async","React Parallax","Recaptcha","Icons","Date Picker","Sweetalert", "Form", "Payment"]
 
     },
     {
         "page_title":"React Hooks",
-        "topic":["Custom hook","useState"]
+        "topic":["Custom hook","useState", "useEffect"]
     },
     {
         "page_title":"React API",
         "topic":["TanStack/Reack-Query","Axios","Axios Instance"]
-    },
-    {
-        "page_title":"Route",
-        "topic":["Private"]
-
     }
 
 ]

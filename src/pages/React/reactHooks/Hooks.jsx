@@ -1,5 +1,7 @@
 // import useGetData from "../../../hooks/useGetData";
 import CustomHook from "./CustomHook";
+import HookUseEffect from "./HookUseEffect";
+import HookUseSatate from "./HookUseSatate";
 
 const Hooks = () => {
     // const [getData] =useGetData('hooks.json');
@@ -7,6 +9,8 @@ const Hooks = () => {
     return (
         <div>
             <CustomHook/>
+            <HookUseSatate/>
+            <HookUseEffect/>
         </div>
     );
 };

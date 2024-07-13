@@ -5,6 +5,7 @@ import Form from "./Form";
 import Icon from "./Icon";
 import DatePicker from "./DatePicker";
 import SweetAlert from "./SweetAlert";
+import Payment from "./Payment";
 // import SweetAlert from "./SweetAlert";
 
 const Components = () => {
@@ -19,6 +20,7 @@ const Components = () => {
             <Icon/>
             <DatePicker/>
             <SweetAlert/>
+            <Payment/>
         </div>
     );
 };

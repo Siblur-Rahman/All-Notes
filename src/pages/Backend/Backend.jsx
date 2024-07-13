@@ -2,8 +2,7 @@ import { useContext, useEffect } from "react";
 import BackendLeftbar from "./BackendLeftbar";
 import { ToolsForCode } from "../../CodeProvider";
 import  {Active, Accordion } from "../../components/CommonJS/CommonJS";
-import ServerBasic from "./MongoDB/ServerBasic";
-import UsageExamples from "./MongoDB/UsageExamples";
+import Server from "./Server/Server";
 
 // import HelmetAsync from "./Components/HelmetAsync";
 
@@ -20,8 +19,7 @@ const Backend = () => {
             <BackendLeftbar/>
         </div>    
         <div className="content">
-            <ServerBasic/>
-            <UsageExamples/>
+            <Server/>
         </div>    
         </>
     );
