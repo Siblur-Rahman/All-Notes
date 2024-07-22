@@ -2,13 +2,12 @@ import PropTypes from 'prop-types';
 
 
 
-const Blog = ({topic,mark, fileName, npmCode, heading, define, defineWithIndex, url, video, time, code}) => {
+const Blog = ({id, topic,mark, fileName, npmCode, heading, define, defineWithIndex, url, video, time, code}) => {
     return (
         <>
-        {mark && <h2 className='mark text-2xl'>{mark}</h2>
-            
-            }
-        {topic && <h2 className="to_jump mt-10px red text-2xl" id={topic}>{topic && topic}<span className="blue"> {time}
+        {mark && <h2 className='mark text-2xl'>{mark}</h2>}
+        {id && <div><h2 className='id to_jump' id={id}>{id}</h2></div>}   
+        {topic && <h2 className="red text-2xl" id={topic}>{topic}<span className="blue"> {time}
         </span>{url && <a href={url} target="_blank"> Detals</a>}</h2>}
         {
             heading && <h2 className='red text-2xl'>{heading}</h2>

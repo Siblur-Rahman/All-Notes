@@ -1,4 +1,4 @@
-import Blog from "../../Shared/Blog";
+import Blog from "../../Shared/Blog.jsx";
 import FileLeftbar from './FileLeftbar.jsx';
 
 const File = () => {

@@ -24,9 +24,18 @@ const Index = () => {
     <p>- : p-</p>
     <p>- : p-</p>
 </div>
+<h3 className="heading center">csm-10-1st with fetch</h3>
+<div className="code">
+    <p>post Api p-1</p>
+    <p>Get Api- 5:50  p-2</p>
+    <p>Update- 2:00  p-3</p>
+    <p>delete- 2:30  p-6</p>
+</div>
+
 <h3 className="heading center">csm-11-1st</h3>
 <div className="code">
-    <p>font-setup to tailwind- 7:00 p-3</p>
+    <p>font-setup to tailwind- 7:00 p-2</p>
+    <p>Page view Screen- 42:15 p-2</p>
     <p>navbar- 42:3  p-3</p>
     <p>Login- 45:12  p-3</p>
     <p>Regis - 0:30  p-3</p>

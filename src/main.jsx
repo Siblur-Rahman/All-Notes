@@ -13,7 +13,7 @@ import Tools from './pages/Tools/Tools';
 import Backend from './pages/Backend/Backend';
 import NextJSNotes from './pages/NextJS/NextJSNotes';
 import Job from './pages/Job/Job';
-import File from './pages/file/File';
+// import File from './pages/file/File';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,10 +43,10 @@ const router = createBrowserRouter([
         path:"/job",
         element: <Job/>,
       },
-      {
-        path:"/file",
-        element: <File/>,
-      },
+      // {
+      //   path:"/file",
+      //   element: <File/>,
+      // },
     ]
   },
 ]);

@@ -32,10 +32,28 @@ return [menu, loading]
 
 export default useMenu;
 `
-            }></Blog>
-            {
-            // items.map((item, index )=><p key={index}>{item}</p>)
-            }
+            }/>
+
+            {/* useAxiosPablic */}
+          <Blog
+          topic={'useAxiosPablic'}
+          time={'PracticAll hooks/useAxiosPublic.jsx'}
+          code={`
+import axios from "axios";
+
+const axiosPublic = axios.create({
+    baseURL: 'url'
+    // baseURL: 'doller{import.meta.env.VITE_API_URL}'
+    // baseURL: 'http://localhost:5000'
+})
+
+const useAxiosPublic = () => {
+    return axiosPublic;
+};
+
+export default useAxiosPublic;
+            `}
+          />
         </div>
     );
 };
