@@ -41,6 +41,45 @@ catch(err){
 }
                 `}
             />
+            <Blog
+                fileName={'server'}
+                code={`
+app.put('/updateItem/:id', async (req, res) => {
+    const id = req.params.id;
+    const itemData = req.body;
+    const query = { _id: new ObjectId(id) };
+    const data = {
+    $set:{
+        // item_title:req.body.item_title
+        ...itemData
+    }
+    }
+    const result = await itemsCollection.updateOne(query, data)
+res.send(result)
+})
+                    `}
+            />
+            <Blog
+            topic={'Extra Api with option'}
+            fileName={'server'}
+            code={`
+    // update a blog in db
+    app.put('/blog/:id', async (req, res) => {
+      const id = req.params.id
+      const blogData = req.body
+      console.log(blogData)
+      const query = { _id: new ObjectId(id) }
+      const options = { upsert: true }
+      const updateDoc = {
+        $set: {
+          ...blogData,
+        },
+      }
+      const result = await blogsCollection.updateOne(query, updateDoc, options)
+      res.send(result)
+    })
+                `}
+            />
         </div>
     );
 };

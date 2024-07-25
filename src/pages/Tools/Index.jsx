@@ -36,8 +36,8 @@ const Index = () => {
 <div className="code">
     <p>font-setup to tailwind- 7:00 p-2</p>
     <p>Page view Screen- 42:15 p-2</p>
-    <p>navbar- 42:3  p-3</p>
-    <p>Login- 45:12  p-3</p>
+    <p>navbar- 42:3  p-2</p>
+    <p>Login- 45:12  p-2</p>
     <p>Regis - 0:30  p-3</p>
     <p>Banner- 13:40   p-3</p>
     <p>Tabs - 32:32  p-3</p>
