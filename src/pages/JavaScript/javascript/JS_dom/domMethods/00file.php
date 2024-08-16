@@ -1,1 +1,0 @@
-<h2><a href="../../JS_dom/domMethods/insertAdjacentElementExam.html">Example</a></h2>

@@ -6,13 +6,14 @@ import {
 } from "react-router-dom";
 import './index.css'
 import Home from './pages/Home';
-import JavaScript from './pages/JavaScript/JavaScript';
+import Javascript from './pages/Javascript/Javascript';
 import CodeProvider from './CodeProvider';
 import ReactNote from './pages/React/ReactNote';
 import Tools from './pages/Tools/Tools';
 import Backend from './pages/Backend/Backend';
 import NextJSNotes from './pages/NextJS/NextJSNotes';
 import Job from './pages/Job/Job';
+import PHero from './pages/P-Hero/PHero';
 // import File from './pages/file/File';
 const router = createBrowserRouter([
   {
@@ -20,8 +21,12 @@ const router = createBrowserRouter([
     element: <Home/>,
     children: [
       {
-        path:"/JavaScript",
-        element: <JavaScript/>,
+        path:"/phero",
+        element: <PHero/>,
+      },
+      {
+        path:"/Javascript",
+        element: <Javascript/>,
       },
       {
         path:"/tools",

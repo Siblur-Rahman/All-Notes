@@ -1,18 +1,17 @@
-
 import { useEffect } from "react";
 import useGetData from "../../hooks/useGetData";
-import { Active } from "../../components/CommonJS/CommonJS";
+import {Active } from "../../components/CommonJS/CommonJS";
 
 
-const ToolsLeftbar = () => {
-    const [getdata]=useGetData('toolsLeftbar.json');
+const JavascriptLeftbar = () => {
+    const [getdata]=useGetData('JavascriptLeftbar.json');
     useEffect(() =>{
         Active();
-        // Accordion();
     })
     return (
         
         <>
+
             {
                 getdata.map(data=><div key={data.title}>
                     <div className="heading">{data.title}</div>
@@ -21,9 +20,9 @@ const ToolsLeftbar = () => {
                     }
                 </div>)
             }
+
         </>
     );
 };
 
-export default ToolsLeftbar;
-{/* <a key={data.topic} href="#{data.topic}" className="link">{data.topic}</a> */}
+export default JavascriptLeftbar;

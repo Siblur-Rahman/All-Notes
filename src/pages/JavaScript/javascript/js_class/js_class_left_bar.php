@@ -1,1 +1,0 @@
-<a href="../js_class/JS_class.php" class="active_class">JS Class </a>

@@ -4,9 +4,9 @@ import {Active}  from "../../components/CommonJS/CommonJS";
 import ToolsLeftbar from "./ToolsLeftbar";
 import PageSetup from "./PageSetup";
 import Images from "./Images"
-import Index from "./Index";
 import Theme from "./Theme";
 import GitGitHub from "./GitGitHub/GitGitHub";
+import IndexPH from './indexPH/IndexPH';
 const Tools = () => {
     const {curlyBraceOpen, curlyBraceClosed, greaterThan,
         lessThan} = useContext(ToolsForCode)
@@ -23,7 +23,7 @@ const Tools = () => {
            <PageSetup/>
            <Theme/>
            <Images/>
-           <Index/>
+           <IndexPH/>
            <GitGitHub/>
         </div>    
         </>

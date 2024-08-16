@@ -5,8 +5,8 @@ const Header = () => {
         <div className="header">
             <>
                 <NavLink  to={'/'}>Home</NavLink>
-                <NavLink  to={'/P-Hero'}>P-HERO</NavLink>
-                <NavLink  to={'/JavaScript'}>JavaScript</NavLink>
+                <NavLink  to={'/PHero'}>P-HERO</NavLink>
+                <NavLink  to={'/Javascript'}>JavaScript</NavLink>
                 <NavLink  to={'/react'}>React</NavLink>
                 <NavLink  to={'/nextjs'}>NextJS</NavLink>
                 <NavLink  to={'/backend'}>Backend</NavLink>

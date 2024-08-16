@@ -1,10 +1,10 @@
 [
     {
-        "page_title":"Server",
+        "title":"Server",
         "topic":["Server Basic Stucture","Usage Examples","Install Node-Express","Express Basic Stucture","Middleware","Post API", "Put API", "Get API", "Delete API"] 
     },
     {
-        "page_title":"JSON Web Token (JWT) ",
+        "title":"JSON Web Token (JWT) ",
         "topic":["JWT"] 
     }
 ]

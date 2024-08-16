@@ -7,7 +7,7 @@ const Blog = ({id, topic,mark, fileName, npmCode, heading, define, defineWithInd
         <>
         {mark && <h2 className='mark text-2xl'>{mark}</h2>}
         {id && <div><h2 className='id to_jump' id={id}>{id}</h2></div>}   
-        {topic && <h2 className="red text-2xl" id={topic}>{topic}<span className="blue"> {time}
+        {topic && <h2 className="red text-2xl to_jump" id={topic}>{topic}<span className="blue"> {time}
         </span>{url && <a href={url} target="_blank"> Detals</a>}</h2>}
         {
             heading && <h2 className='red text-2xl'>{heading}</h2>

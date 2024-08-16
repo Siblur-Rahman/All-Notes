@@ -1,27 +1,23 @@
-import { useContext, useEffect } from "react";
-import JSLeftBar from "./JSLeftBar";
-import { ToolsForCode } from "../../CodeProvider";
-import ArrowFunction from "./function/ArrowFunction";
-import {Active } from "../../components/CommonJS/CommonJS";
+import Blog from "../../Shared/Blog.jsx";
+import DOMDocument from "./HTML-DOM/DOMDocument.jsx";
+import IntroDOM from "./HTML-DOM/IntroDOM.jsx";
+import JavascriptLeftbar from './JavascriptLeftbar.jsx';
 
-
-
-const JavaScript = () => {
-    const {curlyBraceOpen, curlyBraceClosed, greaterThan,
-        lessThan} = useContext(ToolsForCode)
-        useEffect(() =>{
-            Active();
-        },[])
+const Javascript = () => {
     return (
         <>
         <div className="leftBar">
-            <JSLeftBar/>
+            <JavascriptLeftbar/>
         </div>    
         <div className="content">
-           <ArrowFunction/>
-        </div>    
+         <Blog
+         topic={'Topic'}
+         />
+         <IntroDOM/>
+         <DOMDocument/>
+        </div>
         </>
     );
 };
 
-export default JavaScript;
+export default Javascript;

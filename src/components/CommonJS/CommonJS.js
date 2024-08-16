@@ -31,4 +31,3 @@ for (linkCount = 0; linkCount < link.length; linkCount++) {
   });
 }
 }
-// export default Active;

@@ -1,35 +1,35 @@
 [
     {
-        "page_title":"",
+        "title":"",
         "topic":["React Project SetUp"]
 
     },
     {
-        "page_title":"Route",
+        "title":"Route",
         "topic":["React Router","Private"]
 
     },
     {
-        "page_title":"React Notes",
+        "title":"React Notes",
         "topic":["React Props"]
         
     },   
     {
-        "page_title":"Athintication",
+        "title":"Athintication",
         "topic":["firebase.config","AuthProvider", "SignUp Page", "JSON Web Token (JWT)", "Cookie"]
     
     },   
     {
-        "page_title":"Components",
+        "title":"Components",
         "topic":["React Helmet Async","React Parallax","Recaptcha","Icons","Date Picker","Sweetalert", "Form", "Payment"]
 
     },
     {
-        "page_title":"React Hooks",
+        "title":"React Hooks",
         "topic":["Custom hook","useState", "useEffect"]
     },
     {
-        "page_title":"React API",
+        "title":"React API",
         "topic":["TanStack/Reack-Query","Axios","Axios Instance"]
     }
 

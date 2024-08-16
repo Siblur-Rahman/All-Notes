@@ -1,1 +1,0 @@
-<a href="https://www.w3schools.com/jsref/dom_obj_htmlcollection.asp" target="_blank">HTML Collection</a>

@@ -19,8 +19,8 @@ const ReactLeftbar = () => {
         </div>
 
             {
-                getdata.map(data=><div key={data.page_title}>
-                    <div className="heading">{data.page_title}</div>
+                getdata.map(data=><div key={data.title}>
+                    <div className="heading">{data.title}</div>
                     {
                         data.topic.map(topic=><a key={topic} href={`#${topic}`} className="link">{topic}</a>)
                     }
