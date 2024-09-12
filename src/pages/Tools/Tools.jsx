@@ -7,6 +7,8 @@ import Images from "./Images"
 import Theme from "./Theme";
 import GitGitHub from "./GitGitHub/GitGitHub";
 import IndexPH from './indexPH/IndexPH';
+import KeyboardShort from "./KeyBoardShortcut/KeyboardShort";
+import DisplaySymbol from "./DisplaySymbol";
 const Tools = () => {
     const {curlyBraceOpen, curlyBraceClosed, greaterThan,
         lessThan} = useContext(ToolsForCode)
@@ -19,12 +21,13 @@ const Tools = () => {
             <ToolsLeftbar/>
         </div>    
         <div className="content">
-
+            <DisplaySymbol/>
            <PageSetup/>
            <Theme/>
            <Images/>
            <IndexPH/>
            <GitGitHub/>
+           <KeyboardShort/>
         </div>    
         </>
     );

@@ -162,6 +162,10 @@ p{
     padding-top: 30px;
     text-decoration: none;
   }
+  .sidebarHeading{
+    color: red;
+    text-align: center;
+  }
   /* Some Tag */
   /* h2 {
     color: red;

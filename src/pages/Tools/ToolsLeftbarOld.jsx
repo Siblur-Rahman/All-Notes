@@ -1,34 +1,29 @@
+
 import { useEffect } from "react";
 import useGetData from "../../hooks/useGetData";
-import { Accordion, Active } from "../../components/CommonJS/CommonJS";
+import { Active } from "../../components/CommonJS/CommonJS";
 
 
-const ReactLeftbar = () => {
-    const [getdata]=useGetData('reactLeftbar.json');
+const ToolsLeftbar = () => {
+    const [getdata]=useGetData('toolsLeftbar.json');
     useEffect(() =>{
         Active();
-        Accordion();
+        // Accordion();
     })
     return (
         
         <>
-        {/* Accordion */}
-        <div className="accordion">Accordion</div>
-        <div className="panel">
-            Accordion Panel
-        </div>
-
             {
                 getdata.map(data=><div key={data.title}>
-                    <div className="sidebarHeading">{data.title}</div>
+                    <div className="heading">{data.title}</div>
                     {
                         data.topic.map(topic=><a key={topic} href={`#${topic}`} className="link">{topic}</a>)
                     }
                 </div>)
             }
-
         </>
     );
 };
 
-export default ReactLeftbar;
+export default ToolsLeftbar;
+{/* <a key={data.topic} href="#{data.topic}" className="link">{data.topic}</a> */}

@@ -18,9 +18,9 @@ for (accCount = 0; accCount < acc.length; accCount++) {
 }
 const PageSetup = () => {
     return (
-        <>
+        <div className="topic-border">
         <Blog
-        topic={'Page setUp'}
+        id={'Page setUp'}
         code={
 `
 import { useContext, useEffect } from "react";
@@ -87,7 +87,7 @@ export default ReactLeftbar;
 `
         }
         />
-        </>
+        </div>
     );
 };
 

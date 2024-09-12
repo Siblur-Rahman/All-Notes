@@ -56,6 +56,14 @@ const IndexPH = () => {
 
 <CSM11_1st/>
 <CSM11_Last/>
+<h2 className="center heading">milestoe-11</h2>
+<div className="code">
+    <p>Carosel 62-</p>
+    <p>Data add Munually MongoDB 62-1 12:10</p>
+    <p> 62-</p>
+    <p> 62-</p>
+    <p> 62-</p>
+</div>
 <h2 className="center heading">milestoe-12</h2>
 <div className="code">
     <p>Carosel 64-3</p>

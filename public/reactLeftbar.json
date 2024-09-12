@@ -21,7 +21,7 @@
     },   
     {
         "title":"Components",
-        "topic":["React Helmet Async","React Parallax","Recaptcha","Icons","Date Picker","Sweetalert", "Form", "Payment"]
+        "topic":["React Helmet Async","React Parallax","Recaptcha","Icons","Date Picker","Sweetalert", "Form", "Payment", "Pagination"]
 
     },
     {
