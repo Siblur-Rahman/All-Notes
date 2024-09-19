@@ -1,15 +1,15 @@
-import Blog from "../../../Shared/Blog";
+import Blog from "../../../shared/Blog";
 
 const Axios = () => {
     return (
         <div className="topic-border p-10px">
             <Blog
-            topic={'Axios'}
+            id={'Axios'}
             npmCode={'npm install axios'}
             url={'https://axios-http.com/docs/intro'}
             />
             <Blog 
-            topic={'Axios Instance'}
+            id={'Axios Instance'}
             time={'68-1 7:45'}
             url={'https://axios-http.com/docs/instance'}
             code={`

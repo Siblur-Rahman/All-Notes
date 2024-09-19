@@ -6,7 +6,6 @@ import Icon from "./Icon";
 import DatePicker from "./DatePicker";
 import SweetAlert from "./SweetAlert";
 import Payment from "./Payment";
-import Pagination from "./Pagination";
 // import SweetAlert from "./SweetAlert";
 
 const Components = () => {
@@ -22,7 +21,6 @@ const Components = () => {
             <DatePicker/>
             <SweetAlert/>
             <Payment/>
-            <Pagination/>
         </div>
     );
 };

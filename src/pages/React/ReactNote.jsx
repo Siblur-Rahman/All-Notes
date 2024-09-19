@@ -1,47 +1,40 @@
-import { useContext, useEffect } from "react";
-import ReactLeftbar from "./ReactLeftbar";
-import { ToolsForCode } from "../../CodeProvider";
-import  {Active} from "../../components/CommonJS/CommonJS";
+import {useEffect } from "react";
+// import  {Active} from "../../components/CommonJS/CommonJS";
+import {Active} from "../../shared/CommonJS"
 import Components from "./Components/Components";
 import Hooks from "./reactHooks/Hooks";
 // import PropsReact from "./totics/Props";
 import Topics from "./totics/Topics";
 import ReactAPI from "./ReactAPI/ReactAPI";
-import Athintication from "./Athintication/Athintication";
 import Route from "./Route/Route";
-import Blog from "../../Shared/Blog";
+import Blog from "../../shared/Blog";
 // import HelmetAsync from "./Components/HelmetAsync";
 
 const ReactNote = () => {
     useEffect(() =>{
         Active();
     })
-    const {curlyBraceOpen, curlyBraceClosed, greaterThan,
-        lessThan} = useContext(ToolsForCode)
 
     return (
-        <>
-        <div className="leftBar">
-            <ReactLeftbar/>
-        </div>    
-        <div className="content">
+        <>  
+        <div>
             <Blog
-            topic={'React Project SetUp'}
-            code={`
+            id={'React Project SetUp'}
+            code={[`
 npm create vite@latest my-project -- --template react
 cd my-project
 cd my-project
 npm install
 npm run dev
-`}
+`]}
             />
                <div className="code">
                <Blog
                 heading={'React Setup with tailwindcss'}
-                code={`
+                code={[`
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
-                    `}
+                    `]}
                 />
                 <Blog
                 fileName={'tailwind.config.js'}
@@ -73,7 +66,6 @@ plugins: [require("daisyui")],
 
             <Route/>
             <Topics/>
-            <Athintication/>
            <Components/>
            <Hooks/>
            <ReactAPI/>

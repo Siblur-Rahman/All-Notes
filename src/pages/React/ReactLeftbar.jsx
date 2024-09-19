@@ -1,33 +1,150 @@
 import { useEffect } from "react";
-import useGetData from "../../hooks/useGetData";
-import { Accordion, Active } from "../../components/CommonJS/CommonJS";
+import {Active, handleToggleDesplay } from "../../shared/CommonJS";
+// import useGetData from './../../../hooks/useGetData';
 
 
 const ReactLeftbar = () => {
-    const [getdata]=useGetData('reactLeftbar.json');
+    // const [getdata]=useGetData('reactLeftbar.json');
+    const getdata = [
+        {
+            topic:"",
+            subTopic:[
+                {
+                    topics:["React Project SetUp"]
+                },
+            ]
+        },
+        {
+            topic:"ReactJS",
+            subTopic:[
+                {
+                    topics:["React Props"]
+                },
+            ]
+        },
+
+        {
+            topic:"Route",
+            subTopic:[
+                {
+                    topics:["React Router","Private","useNavitate","Navigate"]
+                }
+            ]
+        },
+        {
+            topic:"React Conponents",
+            subTopic:[
+                {
+                    topics:["React Helmet Async","React Parallax","Captcha","Icons","Date Picker","Sweetalert", "Form", "Payment"]
+                },
+                // {
+                //     title:'Fils',
+                //     topics:["file-1", "file-2", ]
+                // }
+            ]
+        },
+        {
+            topic:"React Hooks",
+            subTopic:[
+                {
+                    topics:["Custom hook","useState", "useEffect"]
+                },
+                // {
+                //     title:'Fils',
+                //     topics:["file-1", "file-2", ]
+                // }
+            ]
+        },
+        {
+            topic:"React API",
+            subTopic:[
+                {
+                    topics:["TanStack/Reack-Query","Axios","Axios Instance"]
+                },
+                // {
+                //     title:'Fils',
+                //     topics:["file-1", "file-2", ]
+                // }
+            ]
+        },
+        // {
+        //     title:"",
+        //     topic:["React Project SetUp"]
+    
+        // },
+        // {
+        //     title:"Route",
+        //     topic:["React Router","Private","useNavitate","Navigate"]
+    
+        // },
+        // {
+        //     title:"React Notes",
+        //     topic:["React Props"]
+            
+        // },   
+        // {
+        //     title:"Athintication",
+        //     topic:["firebase.config","AuthProvider", "SignUp Page", "JSON Web Token (JWT)", "Cookie"]
+        
+        // },   
+        // {
+        //     title:"Components",
+        //     topic:["React Helmet Async","React Parallax","Captcha","Icons","Date Picker","Sweetalert", "Form", "Payment"]
+    
+        // },
+        // {
+        //     title:"React Hooks",
+        //     topic:["Custom hook","useState", "useEffect"]
+        // },
+        // {
+        //     title:"React API",
+        //     topic:["TanStack/Reack-Query","Axios","Axios Instance"]
+        // }
+    
+    ]
     useEffect(() =>{
         Active();
-        Accordion();
     })
     return (
-        
         <>
-        {/* Accordion */}
-        <div className="accordion">Accordion</div>
-        <div className="panel">
-            Accordion Panel
-        </div>
 
             {
-                getdata.map(data=><div key={data.title}>
-                    <div className="sidebarHeading">{data.title}</div>
-                    {
-                        data.topic.map(topic=><a key={topic} href={`#${topic}`} className="link">{topic}</a>)
-                    }
+                getdata.map(data=><div key={data.topic}>
+                    <button onClick={handleToggleDesplay}  className="heading w-full">
+                            {data.topic}
+                    </button>
+                   <div className="">
+                   {/* <div className="hidden"> */}
+                        {
+                                data.subTopic.map(topic=>
+                                
+                                <>
+                                    {topic?.title && <div onClick={handleToggleDesplay} className="w-full btn">{topic?.title}</div>}
+                                    <div className={`${topic.title && 'hidden'}`}>
+                                        {
+                                            topic?.topics?.map(topic =><a key={topic} href={`#${topic}`} className="link">{topic}</a>)
+                                        }
+                                    </div>
+                                </>
+                                )
+                            }
+                   </div>
                 </div>)
             }
 
         </>
+        
+        // <>
+        //     {
+        //         getdata.map(data=><div key={data.title}>
+        //             <div className="sidebarHeading">{data.title}</div>
+        //             {
+        //                 data.topic.map(topic=><a key={topic} href={`#${topic}`} className="link">{topic}</a>)
+        //             }
+        //         </div>)
+        //     }
+
+        // </>
     );
 };
 

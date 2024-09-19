@@ -1,65 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
 import './index.css'
-import Home from './pages/Home';
-import Javascript from './pages/Javascript/Javascript';
-import CodeProvider from './CodeProvider';
-import ReactNote from './pages/React/ReactNote';
-import Tools from './pages/Tools/Tools';
-import Backend from './pages/Backend/Backend';
-import NextJSNotes from './pages/NextJS/NextJSNotes';
-import Job from './pages/Job/Job';
-import PHero from './pages/P-Hero/PHero';
-// import File from './pages/file/File';
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home/>,
-    children: [
-      {
-        path:"/phero",
-        element: <PHero/>,
-      },
-      {
-        path:"/Javascript",
-        element: <Javascript/>,
-      },
-      {
-        path:"/tools",
-        element: <Tools/>,
-      },
-      {
-        path:"/react",
-        element: <ReactNote/>,
-      },
-      {
-        path:'/nextjs',
-        element:<NextJSNotes/>
-      },
-      {
-        path:"/backend",
-        element: <Backend/>,
-      },
-      {
-        path:"/job",
-        element: <Job/>,
-      },
-      // {
-      //   path:"/file",
-      //   element: <File/>,
-      // },
-    ]
-  },
-]);
+import { RouterProvider } from 'react-router-dom'
+import router from './routes/Routes'
+import AuthProvider from './providers/AuthProvider'
+import { Toaster } from 'react-hot-toast'
+import { ToastContainer } from 'react-toastify'
+import { HelmetProvider } from 'react-helmet-async'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <CodeProvider>
-      <RouterProvider router={router} />
-    </CodeProvider>
-  </React.StrictMode>,
+    <AuthProvider>
+      {/* <RouterProvider router={router} /> */}
+      <HelmetProvider>
+            <div className='max-w-screen-xl mx-auto'>
+              <RouterProvider router={router} />
+            </div>
+      </HelmetProvider>
+      <Toaster />
+    </AuthProvider>
+    <ToastContainer/>
+  </React.StrictMode>
 )

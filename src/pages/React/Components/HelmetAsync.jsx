@@ -1,9 +1,10 @@
-import Blog from "../../../Shared/Blog";
+import Blog from "../../../shared/Blog";
 
 const HelmetAsync = () => {
     return (
-<div>
-    <Blog 
+<div className="to_jump" id="React Helmet Async">
+        <div className="topic-border">
+        <Blog 
     topic={'React Helmet Async'}
     npmCode={'npm i react-helmet-async'}
     code={`import {HelmetProvider } from 'react-helmet-async';
@@ -17,6 +18,7 @@ const HelmetAsync = () => {
         </div>
     </React.StrictMode>,
     )`}></Blog>
+        </div>
 </div>
     );
 };

@@ -1,4 +1,4 @@
-import Blog from "../../../Shared/Blog";
+import Blog from "../../../shared/Blog";
 
 
 const CSM11_Last = () => {
