@@ -144,8 +144,21 @@ const MS12 = () => {
         <p><span className="text-yellow-300"> </span> 11:00</p>
 <br />
         <p>71-5 (Optional) high level overview of  <span className="text-yellow-300">aggregate pipeline</span></p>
+        <p><span className="text-yellow-300">Unwind</span> 9:00</p>
+        <p><span className="text-yellow-300">lookup</span>9:25</p>
+<br />
+        <p>71-6 (Optional) Get Order <span className="text-yellow-300">Quantity and Revenue</span>  by Category</p>
+        <p><span className="text-yellow-300">order-stats</span> 1:22</p>
+        <p><span className="text-yellow-300">Network</span> 3:30</p>
+        <p><span className="text-yellow-300">Unwind</span> 3:50</p>
+        <p><span className="text-yellow-300">lookup</span>5:33</p>
+        <p><span className="text-yellow-300"></span></p>
+        <p><span className="text-yellow-300"></span></p>
 <br />
         <p>71-7 (Optional) Display <span className="text-yellow-300">custom bar chart and custom pie chart</span></p>
+        <p><span className="text-yellow-300">stats = {} </span> 6:45</p>
+        <p><span className="text-yellow-300">recharts</span> 7:05</p>
+        <p><span className="text-yellow-300">PieChartWithCustomizedLabel</span> 10:55</p>
 <br />
         <p>71-8 Deploy Bistro boss <span className="text-yellow-300"> to vercel and firebase</span></p>
 <br />

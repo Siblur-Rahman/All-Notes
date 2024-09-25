@@ -2,7 +2,8 @@ import Blog from "../../../shared/Blog";
 
 const Icon = () => {
     return (
-        <div>
+    <div className="to_jump" id="Icons">
+            <div className="topic-border">
             <Blog
             topic={'Icons'}
             url={'https://react-icons.github.io/react-icons'}
@@ -16,6 +17,7 @@ import { FaShoppingCart } from "react-icons/fa";
             `}
             />
         </div>
+    </div>
     );
 };
 

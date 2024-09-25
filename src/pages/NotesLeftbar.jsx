@@ -11,7 +11,7 @@ import { useLocation } from 'react-router-dom';
 const NotesLeftbar = () => {
   const {pathname} = useLocation();
     return (
-        <div className="">
+        <div className="p-3">
             {pathname==='/javascript' && <JavasctiptNotesLeftbar/>}
             {pathname==='/react' && <ReactLeftbar/>}
             {pathname==='/authentication' && <AuthenticationLeftbar/>}

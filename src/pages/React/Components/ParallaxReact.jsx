@@ -2,10 +2,10 @@ import Blog from "../../../shared/Blog";
 
 const ParallaxReact = () => {
     return (
-        <div>
-
+        <div id="React Parallax" className="to_jump">
+            <div className="topic-border">
             <Blog
-            topic={'Parallax React'}
+            topic={'React Parallax'}
             time={'64-7/8 :00 & 54-2 9:17'}
             npmCode={'npm i react-parallax'}
             code={
@@ -21,6 +21,7 @@ const Container = () => (
 );`
             }/>
         </div>
+    </div>
     );
 }
 export default ParallaxReact;

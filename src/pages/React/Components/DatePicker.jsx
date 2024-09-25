@@ -2,7 +2,8 @@ import Blog from "../../../shared/Blog";
 
 const DatePicker = () => {
     return (
-        <div>
+        <div className="to_jump" id="Date Picker">
+          <div className="topic-border">
             <Blog
             topic={'Date Picker'}
             npmCode={'npm install react-datepicker --save'}
@@ -25,7 +26,8 @@ const Example = () => {
 };
             `}
             />
-        </div>
+            </div>
+      </div>
     );
 };
 

@@ -1,8 +1,9 @@
 
 import Blog from './../../../shared/Blog';
+import OriginUrl from './OriginUrl';
 const GitGitHub = () => {
     return (
-        <div className="topic-border">
+        <div className="">
             <Blog
             id={'Git-GitHub'}
             topic={'notice'}
@@ -94,6 +95,7 @@ OR
 Type eval "$(ssh-agent -s)"then ssh-add /e/xampp/htdocs/MY-NOTES/gitthen git push -u origin master    
                 `}
             />
+            <OriginUrl/>
         <h1> <a href="https://www.youtube.com/watch?v=M-qSAdWFs9c&list=PLSNRR4BKcowBr2KbKZjKBxWb6cFsaFNSo&index=11" target="_blank">1. Git & GitHub Crash Course - Bangla Tutorial</a> </h1>
         <h1><a href="https://www.youtube.com/playlist?list=PLgH5QX0i9K3qAW8DT6I0XOxC23qnA4FL-" target="_blank">2. Git & GitHub complete course Bangla (Beginner to Advanced)Anisul Islam</a></h1>
 		<h1><a href="https://www.youtube.com/watch?v=ulQA5tjJark" target="_blank">3. Git & GitHub Crash Course 2023 in English</a></h1>

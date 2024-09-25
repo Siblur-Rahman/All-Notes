@@ -6,6 +6,8 @@ import Icon from "./Icon";
 import DatePicker from "./DatePicker";
 import SweetAlert from "./SweetAlert";
 import Payment from "./Payment";
+import Recharts from "./Recharts";
+import Link from "./Link";
 // import SweetAlert from "./SweetAlert";
 
 const Components = () => {
@@ -21,6 +23,8 @@ const Components = () => {
             <DatePicker/>
             <SweetAlert/>
             <Payment/>
+            <Recharts/>
+            <Link/>
         </div>
     );
 };

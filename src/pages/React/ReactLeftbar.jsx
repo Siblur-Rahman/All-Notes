@@ -35,7 +35,7 @@ const ReactLeftbar = () => {
             topic:"React Conponents",
             subTopic:[
                 {
-                    topics:["React Helmet Async","React Parallax","Captcha","Icons","Date Picker","Sweetalert", "Form", "Payment"]
+                    topics:["React Helmet Async","React Parallax","Captcha","Icons","Date Picker","Sweetalert", "Form", "Payment", "Recharts", "React Link"]
                 },
                 // {
                 //     title:'Fils',
@@ -110,16 +110,15 @@ const ReactLeftbar = () => {
 
             {
                 getdata.map(data=><div key={data.topic}>
-                    <button onClick={handleToggleDesplay}  className="heading w-full">
+                    <button onClick={handleToggleDesplay}  className="sidebarHeading w-full text-left">
                             {data.topic}
                     </button>
-                   <div className="">
-                   {/* <div className="hidden"> */}
+                   <div className="hidden">
                         {
                                 data.subTopic.map(topic=>
                                 
                                 <>
-                                    {topic?.title && <div onClick={handleToggleDesplay} className="w-full btn">{topic?.title}</div>}
+                                    {topic?.title && <button onClick={handleToggleDesplay} className="sidebarHeading flex-col">{topic?.title}</button>}
                                     <div className={`${topic.title && 'hidden'}`}>
                                         {
                                             topic?.topics?.map(topic =><a key={topic} href={`#${topic}`} className="link">{topic}</a>)

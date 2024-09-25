@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import {Active} from "../../shared/CommonJS"
+import {Active, handleToggleDesplay} from "../../shared/CommonJS"
 // import useGetData from './../../../hooks/useGetData';
 
 const ToolsLeftbar = () => {
@@ -15,7 +15,7 @@ const ToolsLeftbar = () => {
         },
         {
             title:"Git-GitHub",
-            topic:["notice","Git Configure", "Creating, Removing and so on file and folder", "Git Commit Log", "Git Branch", "Push"]
+            topic:["notice","Git Configure", "Creating, Removing and so on file and folder", "Git Commit Log", "Git Branch", "Push", "origin url change"]
         },
         {
             title:"Keyboard Shortcut",
@@ -35,8 +35,8 @@ const ToolsLeftbar = () => {
         <div className="mt-5">
             {
                 getdata.map(data=><div key={data.title}>
-                    <div className="sidebarHeading flex-col">{data.title}</div>
-                    <ul className="flex-col px-2">
+                    <button className="sidebarHeading flex-col" onClick={handleToggleDesplay}>{data.title}</button>
+                    <ul className="flex-col px-2 hidden">
                     {
                         data?.topic?.map(topic=><li key={topic}><a  href={`#${topic}`} className="link">{topic}</a></li>)
                     }

@@ -57,15 +57,15 @@ const JavasctiptNotesLeftbar = () => {
 
             {
                 getdata.map(data=><div key={data.topic}>
-                    <button onClick={handleToggleDesplay}  className="text-red-500 w-full">
+                    <button onClick={handleToggleDesplay}  className="text-red-500 w-full text-left">
                             {data.topic}
                     </button>
                    <div className="hidden">
                         {
                                 data.subTopic.map(topic=>
                                 
-                                <div className="bg-slate-400 ">
-                                    {topic?.title && <div><button onClick={handleToggleDesplay} className="w-full text-red-500">{topic?.title}</button></div>}
+                                <div className="">
+                                    {topic?.title && <button onClick={handleToggleDesplay} className="text-red-500 w-full text-left">{topic?.title}</button>}
                                     <div className={`${topic.title && 'hidden'}`}>
                                         {
                                             topic?.topics?.map(topic =><a key={topic} href={`#${topic}`} className="link">{topic}</a>)
