@@ -12,6 +12,13 @@ const Link = () => {
                     topic={'React scroll'}
                     url={'https://www.npmjs.com/package/react-scroll'}
                     npmCode={'npm i react-scroll'}
+                    fileName={'file.jsx'}
+                    codes={[
+`<Link activeClass="active" to="aboutSection" spy={true} smooth={true} offset={-100} duration={500} className="list">About</Link>`,
+`<div className='aboutSection'>
+            content
+</div>`
+                    ]}
                 />
             </div>
             

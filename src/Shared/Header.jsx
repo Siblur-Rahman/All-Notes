@@ -17,6 +17,14 @@ const Header = () => {
             path:'/'
           },
           {
+            title:'CSS',
+            path:'/css'
+          },
+          {
+            title:'HTML',
+            path:'/html'
+          },
+          {
             title:'Authentication',
             path:'/authentication'
           },
@@ -49,9 +57,9 @@ const Header = () => {
           //   path:'/'
           // },
         ]
-const navOption = <>
+const navOption = <div className="flex justify-evenly">
                  { links.map((link, index) => <li className={`${pathname === link.path && 'bg-red-600  rounded-lg' }`}><Link  to={link.path}>{link.title}</Link></li>)}
-</>
+</div>
     return (
 <div className="navbar bg-black fixed top-0 z-10 h-[40px] min-h-10">
   <div className="navbar-start">
@@ -78,7 +86,7 @@ const navOption = <>
 {/* </nav> */}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl text-white">Web Development Notes</a>
+    <a className="mr-4 btn btn-ghost text-xl text-white inline-block">Web Development Notes</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1  text-white">

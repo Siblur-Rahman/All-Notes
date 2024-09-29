@@ -36,23 +36,23 @@ const FolderNotesLeftbar = () => {
         
         <>
 
-            {
+{
                 getdata.map(data=><div key={data.topic}>
-                    <button onClick={handleToggleDesplay}  className="heading w-full">
+                    <button onClick={handleToggleDesplay}  className="text-red-500 w-full text-left">
                             {data.topic}
                     </button>
                    <div className="hidden">
                         {
                                 data.subTopic.map(topic=>
                                 
-                                <>
-                                    {topic?.title && <div onClick={handleToggleDesplay} className="w-full btn">{topic?.title}</div>}
+                                <div className="">
+                                    {topic?.title && <button onClick={handleToggleDesplay} className="text-red-500 w-full text-left">{topic?.title}</button>}
                                     <div className={`${topic.title && 'hidden'}`}>
                                         {
                                             topic?.topics?.map(topic =><a key={topic} href={`#${topic}`} className="link">{topic}</a>)
                                         }
                                     </div>
-                                </>
+                                </div>
                                 )
                             }
                    </div>

@@ -3,78 +3,32 @@ import {Active, handleToggleDesplay } from "../../shared/CommonJS";
 import { Link } from "react-scroll";
 
 
-const JavasctiptNotesLeftbar = () => {
+const CSSNotesLeftbar = () => {
     const getdata = [
         {
-            topic:"JS String",
+            topic:"css-1",
             subTopic:[
                 {
-                    // title:'String',
-                    topics:['JS String']
+                    topics:['selector']
                 },
                 {
-                    title:'String Methods',
-                    topics:["String Split", "Method", ]
+                    title:'Fils',
+                    topics:["file-1", "file-2", ]
                 }
             ]
         },
         {
-            topic:"Array",
+            topic:"css-2",
             subTopic:[
                 {
-                    topics:['Array']
+                    topics:['Single topic']
                 },
                 {
-                    title:'Array Methods',
-                    topics:['Array Map', 'Array Reduce']
+                    title:'Fils',
+                    topics:["file-1", "file-2", ]
                 }
             ]
         },
-        {
-            topic:"JS Condition",
-            subTopic:[
-                {
-                    // title:'Array Methods',
-                    topics:['JS Condition','Nested Condition']
-                }
-            ]
-        },
-        {
-            topic:"JS Function",
-            subTopic:[
-                {
-                    // title:'Array Methods',
-                    topics:['Declared Function','Anonymous Functions','Arrow Function','Higher-Order Funcion','Call/Invok','Notice To Function']
-                }
-            ]
-        },
-        {
-            topic:"JS Events",
-            subTopic:[
-                {
-                    // title:'',
-                    topics:['Events', 'onclick']
-                }
-            ]
-        },
-        {
-            topic:"JS Loop",
-            subTopic:[
-                {
-                    // title:'',
-                    topics:['js Loop','For loop', 'For in', 'For while', 'Do while']
-                }
-            ]
-        },
-        {
-            topic:"JS Objects",
-            subTopic:[
-                {
-                    // title:'',
-                    topics:['JS Objects']
-                }
-            ]
-        }
     ]
     useEffect(() =>{
         // Active();
@@ -83,12 +37,12 @@ const JavasctiptNotesLeftbar = () => {
         
         <>
 
-            {
+{
                 getdata.map(data=><div key={data.topic}>
                     <button onClick={handleToggleDesplay}  className="text-red-500 w-full text-left">
                             {data.topic}
                     </button>
-                   <div className="">
+                   <div className="hidden">
                         {
                                 data.subTopic.map(topic=>
                                 
@@ -111,4 +65,4 @@ const JavasctiptNotesLeftbar = () => {
     );
 };
 
-export default JavasctiptNotesLeftbar;
+export default CSSNotesLeftbar;

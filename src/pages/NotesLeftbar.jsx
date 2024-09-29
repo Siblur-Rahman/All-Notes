@@ -1,6 +1,7 @@
 import FolderLeftbar from "./_folder/FolderNotesLeftbar";
 import AuthenticationLeftbar from "./Authentication/AuthenticationLeftbar";
 import BackendNodeLeftbar from "./BackendNote/BackendNodeLeftbar";
+import CSSNotesLeftbar from "./CSSNotes/CSSNotesLeftbar";
 import HowToLeftbar from "./HowTio/HowToLeftbar";
 import JavasctiptNotesLeftbar from "./Javascript/JavasctiptNotesLeftbar";
 import ReactLeftbar from "./React/ReactLeftbar";
@@ -14,6 +15,7 @@ const NotesLeftbar = () => {
         <div className="p-3">
             {pathname==='/javascript' && <JavasctiptNotesLeftbar/>}
             {pathname==='/react' && <ReactLeftbar/>}
+            {pathname==='/css' && <CSSNotesLeftbar/>}
             {pathname==='/authentication' && <AuthenticationLeftbar/>}
             {pathname==='/backend' && <BackendNodeLeftbar/>}
             {pathname==='/tools' && <ToolsLeftbar/>}

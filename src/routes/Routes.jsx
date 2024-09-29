@@ -10,6 +10,7 @@ import JavasctiptNotes from '../pages/Javascript/JavasctiptNotes';
 import FolderNotes from '../pages/_folder/FolderNote';
 import Authentication from '../pages/Authentication/Authentication';
 import HowTo from '../pages/HowTio/HowTo';
+import CSSNotes from '../pages/CSSNotes/CSSNote';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home/>
+      },
+      {
+        path:'/css',
+        element:<CSSNotes/>
       },
       {
         path:'/react',

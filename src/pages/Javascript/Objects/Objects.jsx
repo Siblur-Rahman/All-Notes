@@ -1,14 +1,14 @@
 import Blog from "../../../shared/Blog";
 
-const File = () => {
+const Objects = () => {
     return (   
-            <div className="topic-border">
+            <div className="to_jump JS Objects">
                 <Blog
-                    topic={''}
+                    topic={'JavaScript Objects'}
                     url={''}
                 />
             </div>
     );
 };
 
-export default File;
+export default Objects;
