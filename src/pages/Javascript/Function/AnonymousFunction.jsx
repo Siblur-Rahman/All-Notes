@@ -3,7 +3,7 @@ import Blog from '../../../shared/Blog';
 
 const AnonymousFunction = () => {
     return (
-        <div className='Anonymous Functions'>
+        <div className='Anonymous Functions topic-border'>
             <Blog
             topic={'Anonymous Functions'}
             url={'https://www.geeksforgeeks.org/javascript-anonymous-functions'}

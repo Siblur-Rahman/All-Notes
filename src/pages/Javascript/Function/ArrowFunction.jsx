@@ -2,8 +2,9 @@ import Blog from "../../../shared/Blog";
 
 const ArrowFunction = () => {
     return (
-        <div className="Arrow Function topic-border">
-                        <Blog
+        <div className="Arrow Function to_jump" id="Arrow Function">
+                <div className="topic-border">
+                <Blog
             topic={'Arrow Fanction'}
             code={
         `
@@ -17,6 +18,7 @@ const ArrowFunction = () => {
         Func()
                 `}
             />
+                </div>
         </div>
     );
 };

@@ -2,14 +2,17 @@ import Blog from "../../../shared/Blog";
 
 const Axios = () => {
     return (
-        <div className="topic-border p-10px">
+        <>
+        <div className="Axios topic-border">
             <Blog
-            id={'Axios'}
+            topic={'Axios'}
             npmCode={'npm install axios'}
             url={'https://axios-http.com/docs/intro'}
             />
+        </div>
+        <div className="Axios Instance">
             <Blog 
-            id={'Axios Instance'}
+            topic={'Axios Instance'}
             time={'68-1 7:45'}
             url={'https://axios-http.com/docs/instance'}
             code={`
@@ -27,6 +30,7 @@ export default useAxiosPublic;
             `}
             />
         </div>
+    </>
     );
 };
 

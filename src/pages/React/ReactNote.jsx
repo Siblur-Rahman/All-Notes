@@ -4,10 +4,10 @@ import {Active} from "../../shared/CommonJS"
 import Components from "./Components/Components";
 import Hooks from "./reactHooks/Hooks";
 // import PropsReact from "./totics/Props";
-import Topics from "./totics/Topics";
 import ReactAPI from "./ReactAPI/ReactAPI";
 import Route from "./Route/Route";
 import Blog from "../../shared/Blog";
+import Topics from "./totics/_Topics";
 // import HelmetAsync from "./Components/HelmetAsync";
 
 const ReactNote = () => {

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import {Active, handleToggleDesplay } from "../../shared/CommonJS";
+import { Link } from "react-scroll";
 // import useGetData from './../../../hooks/useGetData';
 
 
@@ -18,7 +19,7 @@ const ReactLeftbar = () => {
             topic:"ReactJS",
             subTopic:[
                 {
-                    topics:["React Props"]
+                    topics:["React Props", 'React Events', 'React ',]
                 },
             ]
         },
@@ -47,7 +48,7 @@ const ReactLeftbar = () => {
             topic:"React Hooks",
             subTopic:[
                 {
-                    topics:["Custom hook","useState", "useEffect"]
+                    topics:["React Hook intro","useState", "useEffect","useEffect Example", "Custom hook"]
                 },
                 // {
                 //     title:'Fils',
@@ -110,7 +111,9 @@ const ReactLeftbar = () => {
 
             {
                 getdata.map(data=><div key={data.topic}>
-                    <button onClick={handleToggleDesplay}  className="sidebarHeading w-full text-left">
+                    {/* <button onClick={handleToggleDesplay}  className="sidebarHeading w-full text-left"> */}
+                    <button onClick={handleToggleDesplay}  className="text-red-500 w-full text-left">
+
                             {data.topic}
                     </button>
                    <div className="hidden">
@@ -121,7 +124,8 @@ const ReactLeftbar = () => {
                                     {topic?.title && <button onClick={handleToggleDesplay} className="sidebarHeading flex-col">{topic?.title}</button>}
                                     <div className={`${topic.title && 'hidden'}`}>
                                         {
-                                            topic?.topics?.map(topic =><a key={topic} href={`#${topic}`} className="link">{topic}</a>)
+                                            topic?.topics?.map(topic =><Link activeClass="active p-0" to={`${topic}`} spy={true} smooth={true} offset={-100} duration={100} key={topic}  className="link">{topic}</Link>)
+                                            // topic?.topics?.map(topic =><a key={topic} href={`#${topic}`} className="link">{topic}</a>)
                                         }
                                     </div>
                                 </>

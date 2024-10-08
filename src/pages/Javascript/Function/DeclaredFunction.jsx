@@ -2,7 +2,7 @@ import Blog from "../../../shared/Blog";
 
 const DeclaredFunction = () => {
     return (
-        <div className="Declared Function">
+        <div className="Declared Function topic-border">
              <div className="">
             <Blog
                 topic={'Declared Function'}

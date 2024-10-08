@@ -11,6 +11,8 @@ import FolderNotes from '../pages/_folder/FolderNote';
 import Authentication from '../pages/Authentication/Authentication';
 import HowTo from '../pages/HowTio/HowTo';
 import CSSNotes from '../pages/CSSNotes/CSSNote';
+import EnglishNotes from '../pages/English/EnglishNotes';
+import Apply from '../pages/Apply';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,10 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home/>
+      },
+      {
+        path:'/apply',
+        element:<Apply/>
       },
       {
         path:'/css',
@@ -45,6 +51,10 @@ const router = createBrowserRouter([
       {
         path:'tools',
         element:<Tools/>
+      },
+      {
+        path:'english',
+        element:<EnglishNotes/>
       },
       {
         path:'/folder',

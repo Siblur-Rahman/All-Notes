@@ -11,12 +11,12 @@ The split() method does not change the original string.
 If (" ") is used as separator, the string is split between words.
     `
     return (
-        <div>
+        <div className="String Split">
             <Blog
-            id={'String Split'}
             url={'https://www.w3schools.com/jsref/jsref_split.asp'}
-             topic={'Discription'}
-             defineWithIndex={descr.split('.')}
+            topic={'String Split'}
+            heading={'Discription'}
+            defineWithIndex={descr.split('.')}
             />
         </div>
     );

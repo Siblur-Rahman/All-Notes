@@ -1,4 +1,5 @@
 import Axios from "./Axios";
+import FakeAPI from "./FakeAPI";
 import TanStackReackQuery from "./TanStackReackQuery";
 
 const ReactAPI = () => {
@@ -6,6 +7,7 @@ const ReactAPI = () => {
         <div>
             <TanStackReackQuery/>
             <Axios/>
+            <FakeAPI/>
         </div>
     );
 };

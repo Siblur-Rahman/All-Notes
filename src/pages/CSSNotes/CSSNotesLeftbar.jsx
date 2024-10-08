@@ -6,10 +6,10 @@ import { Link } from "react-scroll";
 const CSSNotesLeftbar = () => {
     const getdata = [
         {
-            topic:"css-1",
+            topic:"Basic",
             subTopic:[
                 {
-                    topics:['selector']
+                    topics:['selector', 'Icons']
                 },
                 {
                     title:'Fils',

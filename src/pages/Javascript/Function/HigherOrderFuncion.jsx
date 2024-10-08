@@ -24,7 +24,7 @@ const HigherOrderFuncion = () => {
     const multiply = calculate('multiply');
     const divide = calculate('divide');
     return (
-        <div className="to_jump" id="Higher-Order Funcion">
+        <div className="" id="Higher-Order Funcion">
             <div className="topic-border">
                 <Blog
                     topic={'Higher-Order Funcion'}

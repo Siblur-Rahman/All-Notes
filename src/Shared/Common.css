@@ -51,25 +51,7 @@ p{
   color: red;
   font-size: 20px;
 }
-.center{
-  text-align: center;
-}
-.m-auto{
-  margin: auto;
-}
-.mt-5px{
-  margin-top: 5px;
-}
-.mt-10px{
-  margin-top: 10px;
-}
-.my-10px{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.p-10px{
-  padding: 10px;
-}
+
 .active{
     background-color: var(--activeBG-1);
     color: var(--activeColor);
@@ -179,6 +161,14 @@ p{
 .highlight{
   color: red;
   font-weight: bold;
+}
+.text-highlight{
+  color: red;
+  font-weight: bold;
+}
+.bg-highlight{
+  background-color: rgb(113, 113, 122);
+  color: white;
 }
 .code{
   /* width: auto;

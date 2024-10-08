@@ -2,7 +2,7 @@ import Blog from "../../../shared/Blog";
 
 const PropsReact = () => {
     return (
-        <div>
+        <div className="React Props topic-border">
             <Blog
             topic={'React Props'}
             npmCode={'Install: npm i prototype'}

@@ -2,11 +2,15 @@
 import Blog from "../../shared/Blog";
 import Condition from "./Condition/Condition";
 import Array from "./Array/Array/Array";
-import String from "./String/String";
+import _String from "./String/_String";
 import _Funtion from './Function/_Funtion';
 import _Events from './Events/_Events';
 import _Loop from './Loop/_Loop';
 import Objects from "./Objects/Objects";
+import _HTML_DOM from './HTM_DOM/_HTML_DOM';
+import _ES6 from './ES6/_ES6';
+import BasicTopics from "./BasicTopics/_BasicTopics";
+import APIs from "./API/APIs";
 
 const JavasctiptNotes = () => {
 
@@ -17,13 +21,17 @@ const JavasctiptNotes = () => {
                 topic={'JavasctiptNotes'}
                 url={'https://www.geeksforgeeks.org/javascript/'}
                 />
-            <String/>
+            <BasicTopics/>
+            <_String/>
             <Array/>
             <Condition/>
             <_Funtion/>
             <_Events/>
             <_Loop/>
             <Objects/>
+            <_HTML_DOM/>
+            <_ES6/>
+            <APIs/>
         </div>    
     );
 };

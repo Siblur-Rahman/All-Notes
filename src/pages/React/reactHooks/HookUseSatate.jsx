@@ -9,7 +9,7 @@ const HookUseSatate = () => {
         setNumber(newNumber)
     }
     return (
-        <>
+        <div className="useState">
             <Blog
             topic={'useState'}
             time={'React Core Concept 18:15 p-1'}
@@ -31,7 +31,7 @@ const add=()=>{
                 
                 `}
             />
-        </>
+        </div>
     );
 };
 

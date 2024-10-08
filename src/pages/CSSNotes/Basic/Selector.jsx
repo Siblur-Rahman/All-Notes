@@ -1,4 +1,4 @@
-import Blog from "../../shared/Blog";
+import Blog from "../../../shared/Blog";
 
 const Selector = () => {
     return (

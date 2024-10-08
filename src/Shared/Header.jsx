@@ -17,6 +17,10 @@ const Header = () => {
             path:'/'
           },
           {
+            title:'Apply',
+            path:'/apply'
+          },
+          {
             title:'CSS',
             path:'/css'
           },
@@ -45,11 +49,15 @@ const Header = () => {
             path:'/tools'
           },
           {
+            title:'English',
+            path:'/english'
+          },
+          {
             title:'Folder',
             path:'/folder'
           },
           {
-            title:'How To',
+            title:'HowTo',
             path:'/howto'
           },
           // {
@@ -57,65 +65,12 @@ const Header = () => {
           //   path:'/'
           // },
         ]
-const navOption = <div className="flex justify-evenly">
-                 { links.map((link, index) => <li className={`${pathname === link.path && 'bg-red-600  rounded-lg' }`}><Link  to={link.path}>{link.title}</Link></li>)}
-</div>
     return (
-<div className="navbar bg-black fixed top-0 z-10 h-[40px] min-h-10">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h8m-8 6h16" />
-        </svg>
-      </div>
-      <ul
-        tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-{/* <nav> */}
-    {navOption}
-{/* </nav> */}
-      </ul>
-    </div>
-    <a className="mr-4 btn btn-ghost text-xl text-white inline-block">Web Development Notes</a>
-  </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1  text-white">
-      {navOption}
-    </ul>
-  </div>
-  <div className="navbar-end">
-  <div className={`dropdown dropdown-end ${!user && 'hidden'}`}>
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
-          <img
-            alt="Tailwind CSS Navbar component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-        </div>
-      </div>
-      <ul
-        tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
-        </li>
-        <li><a>Settings</a></li>
-        <li><a onClick={handleLogOut}>Sign out</a></li>
-      </ul>
-    </div>
-  </div>
+<div className="border-b-2">
+  <ul className="flex justify-evenly leading-10 px-2 bg-black fixed top-0 z-10 h-[40px] min-h-10 border-b-2 w-full border-yellow-500">
+                  <li className="text-yellow-500">Programming Notes</li>
+                  { links.map((link, index) => <li className={`px-2 ${pathname === link.path && 'bg-red-600  rounded-lg'}`}><Link  to={link.path}>{link.title}</Link></li>)}
+  </ul>
 </div>
     );
 };
