@@ -7,7 +7,7 @@ const OriginUrl = () => {
             <div className="topic-border">
             <Blog
                 topic={'origin url change'}
-                time={'72_5-3 3:50'}
+                topic_time={'72_5-3 3:50'}
                 url={'https://web.programming-hero.com/web-9/video/web-9-72_5-3-publish-your-private-assignments-in-your-github-public-repository'}
 
             />

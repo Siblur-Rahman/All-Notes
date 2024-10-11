@@ -11,7 +11,7 @@ const CustomHook = () => {
             <Blog
             id={'Custom hook'}
             url={'https://www.w3schools.com/react/react_customhooks.asp'}
-            time={'64-3 6:00'}
+            topic_time={'64-3 6:00'}
             defineWithIndex={items}
             code={
 `
@@ -38,7 +38,7 @@ export default useMenu;
             {/* useAxiosPablic */}
           <Blog
           topic={'useAxiosPablic'}
-          time={'PracticAll hooks/useAxiosPublic.jsx'}
+          topic_time={'PracticAll hooks/useAxiosPublic.jsx'}
           code={`
 import axios from "axios";
 

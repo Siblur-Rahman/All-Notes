@@ -63,7 +63,7 @@ export default Apply;
                     `}
             />
             <Blog
-                time={'React Core Concept 27:15 p-2'}
+                topic_time={'React Core Concept 27:15 p-2'}
                 topic={'useEffect'}
                 define={'The useEffect Hook allows you to perform side effects in your components.'}
             />

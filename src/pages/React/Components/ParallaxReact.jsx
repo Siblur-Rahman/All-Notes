@@ -6,7 +6,7 @@ const ParallaxReact = () => {
             <div className="topic-border">
             <Blog
             topic={'React Parallax'}
-            time={'64-7/8 :00 & 54-2 9:17'}
+            topic_time={'64-7/8 :00 & 54-2 9:17'}
             npmCode={'npm i react-parallax'}
             code={
 `import { Parallax } from 'react-parallax';

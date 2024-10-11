@@ -10,14 +10,14 @@ const Payment = () => {
                 <Blog
                 topic={'Stripe'}
                 fileName={'client-side'}
-                time={'70-2'}
+                topic_time={'70-2'}
                 url={'https://github.com/stripe/react-stripe-js'}
                 npmCode={'npm install @stripe/react-stripe-js @stripe/stripe-js'}
                 />
                 <Blog
                 topic={'Custom Payment'}
                 fileName={'server-side'}
-                time={'70-4 2:30'}
+                topic_time={'70-4 2:30'}
                 url={'https://docs.stripe.com/payments/quickstart'}
                 npmCode={'npm install --save stripe'}
                 />

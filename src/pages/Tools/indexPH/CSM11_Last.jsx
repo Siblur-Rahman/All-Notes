@@ -8,7 +8,7 @@ const CSM11_Last = () => {
             id={'CSM-11 Last'}
             />
             
-<div className="code">
+<div className="">
     <p>Privete Route 00:00 </p>
     <p>bids 23:25</p>
     <p>navigate 26:00 p-1</p>

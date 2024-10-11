@@ -8,6 +8,7 @@ import ReactAPI from "./ReactAPI/ReactAPI";
 import Route from "./Route/Route";
 import Blog from "../../shared/Blog";
 import Topics from "./totics/_Topics";
+import HowTo from "./HowTo/_HowTo";
 // import HelmetAsync from "./Components/HelmetAsync";
 
 const ReactNote = () => {
@@ -18,6 +19,8 @@ const ReactNote = () => {
     return (
         <>  
         <div>
+            <HowTo/>
+            <div className="React Project SetUp">
             <Blog
             id={'React Project SetUp'}
             code={[`
@@ -28,7 +31,9 @@ npm install
 npm run dev
 `]}
             />
-               <div className="code">
+            </div>
+
+            <div className="code with tailwindcss">
                <Blog
                 heading={'React Setup with tailwindcss'}
                 code={[`
@@ -36,6 +41,7 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
                     `]}
                 />
+
                 <Blog
                 fileName={'tailwind.config.js'}
                 code={`
@@ -50,8 +56,11 @@ content: ["./index.html","./src/**/*.{js,ts,jsx,tsx}",],
 @tailwind utilities;
                     `}
                 />
+            </div>
+
+            <div className="DaigyUI">
                 <Blog
-                heading={'With DaigyUI'}
+                heading={'React Setup With DaigyUI'}
                 npmCode={'npm i -D daisyui@latest'}
                 />
                 <Blog
@@ -61,11 +70,18 @@ module.exports = {
 //...
 plugins: [require("daisyui")],
                     `}
-                />
-               </div>
+                />      
+            </div>
 
-            <Route/>
+            {/* <div className="eslint">
+                <Blog
+                    fileName={'.eslintrc.cjs'}
+                    code={''}
+                />
+            </div> */}
+
             <Topics/>
+            <Route/>
            <Components/>
            <Hooks/>
            <ReactAPI/>

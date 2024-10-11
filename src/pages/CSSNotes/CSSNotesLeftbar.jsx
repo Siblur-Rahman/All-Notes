@@ -9,7 +9,7 @@ const CSSNotesLeftbar = () => {
             topic:"Basic",
             subTopic:[
                 {
-                    topics:['selector', 'Icons']
+                    topics:['selector', 'Icons', 'Font']
                 },
                 {
                     title:'Fils',

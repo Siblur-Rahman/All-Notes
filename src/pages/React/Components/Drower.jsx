@@ -5,7 +5,7 @@ const Drower = () => {
         <div>
             <Blog
             topic={'Dwower'}
-            time={''}
+            topic_time={''}
             url={'https://daisyui.com/components/drawer/'}
             />
         </div>

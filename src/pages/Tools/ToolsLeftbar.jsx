@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import {Active, handleToggleDesplay} from "../../shared/CommonJS"
+import { Link } from "react-scroll";
 // import useGetData from './../../../hooks/useGetData';
 
 const ToolsLeftbar = () => {
@@ -11,7 +12,7 @@ const ToolsLeftbar = () => {
         },
         {
             title:"Index of PH",
-            topic:["CSM-11 1st","CSM-11 Last","MS-12","Theme","Images", "Index", "Assignments"]
+            topic:["MS-07","MS-08","MS-09", "MS-10", "MS-11", "MS-12", "CSM-06", "CSM-07", "CSM-08", "CSM-09","CSM-10", "CSM-11 1st","CSM-11 Last", "Theme","Images", "Index", "Assignments"]
         },
         {
             title:"Git-GitHub",
@@ -20,6 +21,10 @@ const ToolsLeftbar = () => {
         {
             title:"Keyboard Shortcut",
             topic:["Common Keyboard","VS Code"]
+        },
+        {
+            title:"VS Code",
+            topic:["Some Extensions",""]
         },
         {
             title:"Computer",
@@ -38,7 +43,8 @@ const ToolsLeftbar = () => {
                     <button className="sidebarHeading flex-col" onClick={handleToggleDesplay}>{data.title}</button>
                     <ul className="flex-col px-2 hidden">
                     {
-                        data?.topic?.map(topic=><li key={topic}><a  href={`#${topic}`} className="link">{topic}</a></li>)
+                        data?.topic?.map(topic=><Link activeClass="active p-0" to={`${topic}`} spy={true} smooth={true} offset={-100} duration={100} key={topic}  className="link">{topic}</Link>)
+                        // data?.topic?.map(topic=><li key={topic}><a  href={`#${topic}`} className="link">{topic}</a></li>)
                     }
                     </ul>
                 </div>)

@@ -3,7 +3,14 @@ import '../shared/Common.css'
 
 
 
-const Blog = ({id, topic, mark, fileName, npmCode, heading, define, defineBG_highlight, defineWithIndex, index, url, details, video, time, codes, markCode, code, syntax, code_highlight, h2, example}) => {
+const Blog = ({id, 
+            topic, topic_time, topic_timeURL, topicURL, url, details,
+            mark, fileName, npmCode, 
+            heading, head_details, head_time, head_timeURL,
+            define, defineBG_highlight, defineWithIndex,
+            codes, markCode, code, index, 
+             video, syntax,  h2, example
+            }) => {
     return (
         <>
         {fileName && <p className='red'>{fileName}</p>}
@@ -12,11 +19,22 @@ const Blog = ({id, topic, mark, fileName, npmCode, heading, define, defineBG_hig
 
         {id && <div><h2 className='id' id={id}>{id}</h2></div>}   
 
-        {topic && <h2 className="red text-2xl topic">{topic}<span className="blue"> {time}
+        {topic && <h2 className="red text-2xl topic">{topic} 
+            {topic_time && <span className="blue"> 
+                {topic_time? <a href={topic_timeURL} target="_blank" className='text-yellow-500'> {topic_time} <span className='text-green-200'>Go to Video</span></a>: topic_time}
+            </span>} 
 
-        </span>{url && <a href={url} target="_blank" className='text-yellow-500'> Detals</a>}</h2>}
-        {
+            {url && <a href={url} target="_blank" className='text-yellow-500'> Go to Website</a> || topicURL && <a href={topicURL} target="_blank" className='text-yellow-500'> Go to Website</a>}</h2>}
+        {/* {
             heading && <h2 className='red text-2xl'>{heading} {details && <a href={details} target='_blank'><span className='text-yellow-300'> Details</span></a>}</h2>
+        } */}
+        {
+            heading && <h2 className='red text-2xl'>
+                {heading} 
+                {head_time && <span className="blue"> 
+                {head_timeURL? <a href={head_timeURL} target="_blank" className='text-blue-500'> {head_time} <span className='text-green-200'>Go to Video</span></a>: head_time}
+            </span> } 
+                {head_details && <a href={head_details} target='_blank'><span className='text-yellow-300'> Go to Website</span></a>}</h2>
         }
 
         {npmCode && <div className="npmCode my-10px">
@@ -29,7 +47,7 @@ const Blog = ({id, topic, mark, fileName, npmCode, heading, define, defineBG_hig
         {define && <div className='p-4'>{define}</div>}
         {defineBG_highlight && <div className='p-4 bg-zinc-500'>{defineBG_highlight}</div>}
         {
-            defineWithIndex &&  defineWithIndex.map((item, ind )=><p key={index}>{index && <>{index+1} .</>} {item}</p>)
+            defineWithIndex &&  defineWithIndex.map((item, ind )=><p key={index}>{index && <>{ind+1} .</>} {item}</p>)
         }
 
         {syntax && <>{syntax}</>}

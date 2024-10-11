@@ -5,7 +5,7 @@ const InstallNodeExpress = () => {
         <div>
             <Blog
             topic={'Install Node-Express'}
-            time={'53_5-1'}
+            topic_time={'53_5-1'}
             url={'https://expressjs.com/en/starter/installing.html'}
             />
             <div className="code">
@@ -15,7 +15,7 @@ const InstallNodeExpress = () => {
                 <Blog
                 topic={'Install nodemon for restart server'}
                 url={'https://www.digitalocean.com/community/tutorials/workflow-nodemon'}
-                time={'53_5-2 5:45'}
+                topic_time={'53_5-2 5:45'}
                 npmCode={'npm install nodemon --global'}
                 />
             </div>

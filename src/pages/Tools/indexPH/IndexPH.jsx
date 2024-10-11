@@ -1,22 +1,31 @@
+import CSM06 from "./CSM06";
+import CSM07 from "./CSM07";
+import CSM08 from "./CSM08";
+import CSM09 from "./CSM09";
+import CSM10 from "./CSM10";
 import CSM11_1st from "./CSM11_1st";
 import CSM11_Last from "./CSM11_Last";
+import MS07 from "./MS07";
+import MS08 from "./MS08";
+import MS09 from "./MS09";
+import MS10 from "./MS10";
+import MS11 from "./MS11";
 import MS12 from "./MS12";
 
 const IndexPH = () => {
     return (
         <div>
             <span className="to_jump" id="Index"></span>
-<h2 className="center heading">milestoe-09</h2>
-<div className="code">
-<h3>53_5-1 Install Node-Express And Run Your First Node Server</h3>
-<p> 53_5-1-  :</p>
-<p> 53_5-2-  7:50:</p>
-</div>
-<h2 className="center heading">milestoe-10</h2>
-<div className="code">
-        <h3>54-2 Client And Server Connection With Request And Response</h3>
-<p>Post API 54-2-  7:50:</p>
-</div>
+<MS07/>
+<MS08/>
+<MS09/>
+<MS11/>
+<MS10/>
+<CSM06/>
+<CSM07/>
+<CSM08/>
+<CSM09/>
+<CSM10/>
 <h3 className="heading center">React Core Concept</h3>
 <div className="code">
     <p>UseState- 18:15 p-1</p>

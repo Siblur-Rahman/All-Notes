@@ -13,7 +13,7 @@ const Axios = () => {
         <div className="Axios Instance">
             <Blog 
             topic={'Axios Instance'}
-            time={'68-1 7:45'}
+            topic_time={'68-1 7:45'}
             url={'https://axios-http.com/docs/instance'}
             code={`
 import axios from "axios";

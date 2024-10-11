@@ -7,7 +7,7 @@ const CSM11_1st = () => {
             <Blog
             id={'CSM-11 1st'}
             />
-<div className="code">
+<div className="">
     <p>font-setup to tailwind- 7:00 p-2</p>
     <p>Route- 13:45 p-2</p>
     <p>firebase- 19:30 p-2</p>

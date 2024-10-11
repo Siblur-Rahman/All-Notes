@@ -7,7 +7,7 @@ const TanStackReackQuery = () => {
             npmCode={'npm i @tanstack/react-query'}
             topic={'TanStack/Reack-Query'}
             url={'https://tanstack.com/query/latest/docs/framework/react/overview'}
-            time={'67-4 4:50, 67-5 csm11-last 1:15:10 p-3, csm-12-day-1 5:50 p-3 '}
+            topic_time={'67-4 4:50, 67-5 csm11-last 1:15:10 p-3, csm-12-day-1 5:50 p-3 '}
             code={`
 TanStack Query ডেটা ফেচিং এবং সিঙ্ক্রোনাইজেশনের জন্য একটি জনপ্রিয় লাইব্রেরি। 
 এর মধ্যে "mutation" একটি গুরুত্বপূর্ণ কনসেপ্ট যা মূলত সার্ভার ডেটা পরিবর্তনের জন্য ব্যবহৃত হয়।

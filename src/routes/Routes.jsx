@@ -10,9 +10,9 @@ import JavasctiptNotes from '../pages/Javascript/JavasctiptNotes';
 import FolderNotes from '../pages/_folder/FolderNote';
 import Authentication from '../pages/Authentication/Authentication';
 import HowTo from '../pages/HowTio/HowTo';
-import CSSNotes from '../pages/CSSNotes/CSSNote';
 import EnglishNotes from '../pages/English/EnglishNotes';
 import Apply from '../pages/Apply';
+import CSSNotes from '../pages/CSSNotes/_CSSNote';
 
 const router = createBrowserRouter([
   {

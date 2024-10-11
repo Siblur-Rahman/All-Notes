@@ -6,7 +6,7 @@ const PostApi = () => {
           <Blog
             id={"Post API"}
             topic={"Post API"}
-            time={'MSote-10 1st day p-1'}
+            topic_time={'MSote-10 1st day p-1'}
           /> 
           <Blog
           fileName={'client-site'}
@@ -49,7 +49,7 @@ const PostApi = () => {
           />
           <Blog
           topic={'post with hook as useAxiosPablic'}
-          time={'PracticAll component/Item.jsx'}
+          topic_time={'PracticAll component/Item.jsx'}
           code={`
   const axiosPublic = useAxiosPublic()
     try{

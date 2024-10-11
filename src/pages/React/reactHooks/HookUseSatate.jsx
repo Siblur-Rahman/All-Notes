@@ -12,7 +12,7 @@ const HookUseSatate = () => {
         <div className="useState">
             <Blog
             topic={'useState'}
-            time={'React Core Concept 18:15 p-1'}
+            topic_time={'React Core Concept 18:15 p-1'}
             />
             <h2>Namber: {number}</h2>
             <button className="btn-primary btn" onClick={add}>Add Number</button>

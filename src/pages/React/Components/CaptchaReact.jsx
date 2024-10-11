@@ -7,7 +7,7 @@ const CaptchaReact = () => {
                 <Blog
                         topic={'Captcha'}
                         url={"https://www.npmjs.com/package/react-simple-captcha"}
-                        time={"66-2 00:00)"}
+                        topic_time={"66-2 00:00)"}
                         npmCode={"npm install --save react-google-recaptcha"}
                     />
 

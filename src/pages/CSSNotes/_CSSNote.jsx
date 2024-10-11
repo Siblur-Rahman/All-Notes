@@ -3,6 +3,7 @@ import {Active} from "../../shared/CommonJS"
 import Blog from "../../shared/Blog";
 import Selector from "./Basic/Selector";
 import Icons from "./Basic/Icons";
+import Font from "./Basic/Font";
 
 const CSSNotes = () => {
     useEffect(() =>{
@@ -18,7 +19,7 @@ const CSSNotes = () => {
             />
             <Selector/>
             <Icons/>
-            
+            <Font/>
             </div>  
         </div>  
     );

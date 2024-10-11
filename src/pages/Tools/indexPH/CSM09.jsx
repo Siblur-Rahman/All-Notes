@@ -1,25 +1,26 @@
 import Blog from "../../../shared/Blog";
 
 
-const MS = () => {
+const CSM09 = () => {
     return (
-        <div className='topic-border MS-'>
-            <Blog topic={'Milestone:'} />
+        <div className='topic-border CSM-09'>
+            <Blog topic={'CSM-09'} />
 
-            <Blog topic={'Module:'}/>
+            <Blog topic={''}/>
             <h3 className="heading capitalize"></h3>
             <h3 className="heading capitalize"></h3>
             <h3 className="heading capitalize"></h3>
-            <Blog topic={'Module:'}/>
+            
+            <Blog topic={''}/>
             <h3 className="heading capitalize"></h3>
             <h3 className="heading capitalize"></h3>
             <h3 className="heading capitalize"></h3>
 
-            <Blog topic={'Module:'}/>
+            <Blog topic={''}/>
             <h3 className="heading capitalize"></h3>
             <h3 className="heading capitalize"></h3>
         </div>
     );
 };
 
-export default MS;
+export default CSM09;

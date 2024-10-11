@@ -6,7 +6,7 @@ const AuthProvider = () => {
         <div>
             <Blog
             topic={'AuthProvider'}
-            time={'66-3 8:30'}
+            topic_time={'66-3 8:30'}
             />
         </div>
     );

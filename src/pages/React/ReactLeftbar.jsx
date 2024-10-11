@@ -8,10 +8,18 @@ const ReactLeftbar = () => {
     // const [getdata]=useGetData('reactLeftbar.json');
     const getdata = [
         {
-            topic:"",
+            topic:"How To",
             subTopic:[
                 {
-                    topics:["React Project SetUp"]
+                    topics:["Fake Data Ctreate", 'Image Add', 'State Management','Theme Setup','Deploy']
+                },
+            ]
+        },
+        {
+            topic:"Project SetUp",
+            subTopic:[
+                {
+                    topics:["Project SetUp", 'tailwindcss', 'DaigyUI','eslint']
                 },
             ]
         },
@@ -19,7 +27,7 @@ const ReactLeftbar = () => {
             topic:"ReactJS",
             subTopic:[
                 {
-                    topics:["React Props", 'React Events', 'React ',]
+                    topics:["Props", 'PropType', 'Events', '',]
                 },
             ]
         },
@@ -28,7 +36,7 @@ const ReactLeftbar = () => {
             topic:"Route",
             subTopic:[
                 {
-                    topics:["React Router","Private","useNavitate","Navigate"]
+                    topics:["React Router","Route-Link Dynamic", "Private","useNavitate","Navigate"]
                 }
             ]
         },

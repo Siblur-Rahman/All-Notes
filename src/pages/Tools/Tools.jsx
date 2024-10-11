@@ -8,6 +8,7 @@ import IndexPH from './indexPH/IndexPH';
 import KeyboardShort from "./KeyBoardShortcut/KeyboardShort";
 import Assignments from "./indexPH/Assignments";
 import Computer from "./Computer/Computer";
+import VSCODE from "./VSCODE/VSCODE";
 
 const Tools = () => {
     // const {curlyBraceOpen, curlyBraceClosed, greaterThan,
@@ -24,6 +25,7 @@ const Tools = () => {
            <KeyboardShort/>
            <Assignments/>
            <Computer/>
+           <VSCODE/>
         </div>    
         </>
     );
