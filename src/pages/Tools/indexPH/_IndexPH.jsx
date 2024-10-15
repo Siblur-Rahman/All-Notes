@@ -1,3 +1,4 @@
+import Assignments from "./Assignments";
 import CSM06 from "./CSM06";
 import CSM07 from "./CSM07";
 import CSM08 from "./CSM08";
@@ -11,6 +12,7 @@ import MS09 from "./MS09";
 import MS10 from "./MS10";
 import MS11 from "./MS11";
 import MS12 from "./MS12";
+import PH_Projects from "./PH_Projects";
 
 const IndexPH = () => {
     return (
@@ -94,6 +96,8 @@ ignUp page 5:25  p-5</p>
 02. https://i.ibb.co/Ld5xZYx/business-1.jpg
 03. https://i.ibb.co/d43BZMW/food-1.jpg
 04. https://i.ibb.co/yX82hv9/banner.jpg
+<PH_Projects/>
+<Assignments/>
         </div>
     );
 };

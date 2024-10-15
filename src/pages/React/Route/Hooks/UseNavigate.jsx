@@ -1,12 +1,13 @@
-import Blog from "../../../shared/Blog";
+import Blog from "../../../../shared/Blog";
 
 
 const UseNavigate = () => {
     return (
-        <>
+        <div className="topic-border useNavitate">
         <Blog
-            id={'useNavitate'}
-            fileName={'msrRestaurant Project: FoodCart.jsx'}
+            topic={'useNavitate'}
+            topicURL={'https://reactrouter.com/en/main/hooks/use-navigate'}
+            fileName={'FoodCart.jsx'}
             code={
     `
     import { useLocation, useNavigate } from 'react-router-dom';
@@ -29,7 +30,7 @@ const UseNavigate = () => {
             }
             />
             
-        </>
+        </div>
     );
 };
 

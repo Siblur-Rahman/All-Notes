@@ -13,8 +13,6 @@ const Blog = ({id,
             }) => {
     return (
         <>
-        {fileName && <p className='red'>{fileName}</p>}
-
         {mark && h2 && <h2 className='mark text-2xl'>{mark}</h2>}
 
         {id && <div><h2 className='id' id={id}>{id}</h2></div>}   
@@ -37,8 +35,8 @@ const Blog = ({id,
                 {head_details && <a href={head_details} target='_blank'><span className='text-yellow-300'> Go to Website</span></a>}</h2>
         }
 
-        {npmCode && <div className="npmCode my-10px">
-           { fileName && <p className='text-red-500 text-xl'>{fileName}</p>}
+        {npmCode && <div className="npmCode my-10px mt-2">
+            {fileName && <span className='red bg-amber-200 p-2 mb-1 rounded-sm'>{fileName}</span>}
             {npmCode}
             </div>}
 
@@ -52,17 +50,25 @@ const Blog = ({id,
 
         {syntax && <>{syntax}</>}
 
-        {code && <pre className='code'>
-            {code}
-        </pre>
+        {code && 
+        <>
+            {fileName && <span className='red bg-amber-200 px-2 rounded-sm'>{fileName}</span>}
+            <pre className='code'>
+                {code}
+            </pre>
+        </>
         }
 
-        {codes && <pre className=''>
-            {
-                codes?.map((code, index) =><div className={`${(index%2 && markCode)? 'code-highlight': 'code'}`}>{code}</div>)
-                
-            }
-        </pre>
+        {codes && 
+            <>
+                {fileName && <span className='red bg-amber-200 px-2 rounded-sm'>{fileName}</span>}
+                <pre className='code'>
+                    {
+                        codes?.map((code, index) =><div className={`${(index%2 && markCode)? 'code-highlight': 'code'}`}>{code}</div>)
+                        
+                    }
+                </pre>
+            </>
         }
 
         {details && <a href={details} target='_blank'><span className='text-yellow-300'> Details</span></a>}

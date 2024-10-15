@@ -1,10 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom'
 import Main from '../layouts/Main'
 import Tools from './../pages/Tools/Tools';
-import Notes from '../pages/Notes'
 import Home from '../pages/Home'
 import ErrorPage from '../pages/ErrorPage'
-import ReactNote from '../pages/React/ReactNote';
 import BackendNotes from '../pages/BackendNote/BackendNotes';
 import JavasctiptNotes from '../pages/Javascript/JavasctiptNotes';
 import FolderNotes from '../pages/_folder/FolderNote';
@@ -13,6 +11,7 @@ import HowTo from '../pages/HowTio/HowTo';
 import EnglishNotes from '../pages/English/EnglishNotes';
 import Apply from '../pages/Apply';
 import CSSNotes from '../pages/CSSNotes/_CSSNote';
+import ReactNote from './../pages/React/_ReactNote/ReactNote';
 
 const router = createBrowserRouter([
   {

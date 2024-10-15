@@ -1,12 +1,12 @@
-import Blog from "../../../shared/Blog";
+import Blog from "../../../../shared/Blog";
 
 const DynamicRouteLink = () => {
     return (
-        <div className="Route-Link Dynamic">
+        <div className="Route-Link Dynamic topic-border">
             <Blog 
                 topic={'Dynamic Route-Link'}
                 heading={'Link'}
-                code={'`/order/${coverTitle}`'}
+                code={<>{"<Link to={`/order/${coverTitle}`}>"}</>}
             />
             <Blog 
                 heading={'Route'}

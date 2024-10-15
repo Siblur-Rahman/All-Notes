@@ -3,6 +3,7 @@ import Blog from "../../../shared/Blog";
 import CustomHook from "./CustomHook";
 import HookUseEffect from "./HookUseEffect";
 import HookUseSatate from "./HookUseSatate";
+import Ref from "./Ref";
 
 const Hooks = () => {
 
@@ -18,6 +19,7 @@ const Hooks = () => {
             </div>
             <HookUseSatate/>
             <HookUseEffect/>
+            <Ref/>
             <CustomHook/>
         </div>
     );

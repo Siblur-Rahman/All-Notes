@@ -2,7 +2,7 @@
 import Blog from './../../../shared/Blog';
 const Assignments = () => {
     return (
-        <>
+        <div className='Assignments'>
          <Blog
          topic={'Assignments'}
          />
@@ -24,7 +24,7 @@ const Assignments = () => {
          <h2 className="text-2">Assignment-8: <mark>60</mark></h2>
          <h2 className="text-2">Assignment-9: <mark>33</mark>Resume</h2>
          <h2 className="text-2">Assignment-10: <mark>00</mark>Job Task</h2>
-        </>
+        </div>
     );
 };
 

@@ -5,7 +5,7 @@ import CSSNotesLeftbar from "./CSSNotes/CSSNotesLeftbar";
 import EnglishNotesNotesLeftbar from "./English/EnglishNotesNotesLeftbar";
 import HowToLeftbar from "./HowTio/HowToLeftbar";
 import JavasctiptNotesLeftbar from "./Javascript/JavasctiptNotesLeftbar";
-import ReactLeftbar from "./React/ReactLeftbar";
+import ReactLeftbar from "./React/_ReactLeftbar/ReactLeftbar";
 import ToolsLeftbar from "./Tools/ToolsLeftbar";
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';

@@ -12,7 +12,7 @@ const ToolsLeftbar = () => {
         },
         {
             title:"Index of PH",
-            topic:["MS-07","MS-08","MS-09", "MS-10", "MS-11", "MS-12", "CSM-06", "CSM-07", "CSM-08", "CSM-09","CSM-10", "CSM-11 1st","CSM-11 Last", "Theme","Images", "Index", "Assignments"]
+            topic:["MS-07","MS-08","MS-09", "MS-10", "MS-11", "MS-12", "CSM-06", "CSM-07", "CSM-08", "CSM-09","CSM-10", "CSM-11 1st","CSM-11 Last", "Theme","Images", "Index","PH_Projects", "Assignments"]
         },
         {
             title:"Git-GitHub",

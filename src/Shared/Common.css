@@ -68,8 +68,9 @@ p{
     padding: 5px 0 5% 0;
 }
 .sidebarHeading{
-  color: red;
-  text-align: center;
+  color: rgb(230, 226, 12);
+  text-align: center !important;
+  display: inline-block;
 }
 .sidebarHiddenDiv{
   background: #e4d7d7;
@@ -163,7 +164,7 @@ p{
   font-weight: bold;
 }
 .text-highlight{
-  color: red;
+  color: rgb(230, 226, 18);
   font-weight: bold;
 }
 .bg-highlight{

@@ -8,13 +8,16 @@ import SweetAlert from "./SweetAlert";
 import Payment from "./Payment";
 import Recharts from "./Recharts";
 import Link from "./Link";
+import AwesomeComponents from "./AwesomeComponents";
+import Map from "./Map";
 // import SweetAlert from "./SweetAlert";
 
 const Components = () => {
     return (
         <div className="to_jump" id="component">
             <a href="https://github.com/brillout/awesome-react-components" target="_blank">brillout/awesome-react-components</a>
-            <p>Carosel 64-3</p> 
+            <p>Carosel 64-3</p>
+            <AwesomeComponents/> 
             <HelmetAsync/>
             <ParallaxReact/>
             <CaptchaReact/>
@@ -25,6 +28,7 @@ const Components = () => {
             <Payment/>
             <Recharts/>
             <Link/>
+            <Map/>
         </div>
     );
 };

@@ -7,18 +7,18 @@ const CSM = () => {
             <Blog topic={''} />
 
             <Blog topic={''}/>
-            <h3 className="heading capitalize"></h3>
-            <h3 className="heading capitalize"></h3>
-            <h3 className="heading capitalize"></h3>
+            <h3 className="heading capitalize">Module:</h3>
+            <h3 className="heading capitalize">Module:</h3>
+            <h3 className="heading capitalize">Module:</h3>
             
             <Blog topic={''}/>
-            <h3 className="heading capitalize"></h3>
-            <h3 className="heading capitalize"></h3>
-            <h3 className="heading capitalize"></h3>
+            <h3 className="heading capitalize">Module:</h3>
+            <h3 className="heading capitalize">Module:</h3>
+            <h3 className="heading capitalize">Module:</h3>
 
             <Blog topic={''}/>
-            <h3 className="heading capitalize"></h3>
-            <h3 className="heading capitalize"></h3>
+            <h3 className="heading capitalize">Module:</h3>
+            <h3 className="heading capitalize">Module:</h3>
         </div>
     );
 };

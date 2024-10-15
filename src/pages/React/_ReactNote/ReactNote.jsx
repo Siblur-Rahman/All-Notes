@@ -1,14 +1,14 @@
 import {useEffect } from "react";
 // import  {Active} from "../../components/CommonJS/CommonJS";
-import {Active} from "../../shared/CommonJS"
-import Components from "./Components/Components";
-import Hooks from "./reactHooks/Hooks";
+import {Active} from "../../../shared/CommonJS"
+import Components from "../Components/_Components";
+import Hooks from "../reactHooks/Hooks";
 // import PropsReact from "./totics/Props";
-import ReactAPI from "./ReactAPI/ReactAPI";
-import Route from "./Route/Route";
-import Blog from "../../shared/Blog";
-import Topics from "./totics/_Topics";
-import HowTo from "./HowTo/_HowTo";
+import ReactAPI from "../ReactAPI/ReactAPI";
+import Blog from "../../../shared/Blog";
+import HowTo from "../HowTo/_HowTo";
+import BasicTopics from "../_BacisTotics/_BasicTopics";
+import Route from "../Route/_Route/Route";
 // import HelmetAsync from "./Components/HelmetAsync";
 
 const ReactNote = () => {
@@ -19,10 +19,9 @@ const ReactNote = () => {
     return (
         <>  
         <div>
-            <HowTo/>
-            <div className="React Project SetUp">
+            <div className="Project SetUp">
             <Blog
-            id={'React Project SetUp'}
+            topic={'React Project SetUp'}
             code={[`
 npm create vite@latest my-project -- --template react
 cd my-project
@@ -80,11 +79,12 @@ plugins: [require("daisyui")],
                 />
             </div> */}
 
-            <Topics/>
+            <BasicTopics/>
             <Route/>
            <Components/>
            <Hooks/>
            <ReactAPI/>
+           <HowTo/>
            {/* <ReactHelmetAsync/> */}
         </div>    
         </>

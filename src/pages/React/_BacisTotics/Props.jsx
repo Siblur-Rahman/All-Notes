@@ -4,7 +4,7 @@ import Details from "../../../shared/Details";
 const PropsReact = () => {
     return (
         <div>
-            <div className="Props">
+            <div className="Props topic-border">
                 <Blog
                     heading={'React Props'}
                     define={<>

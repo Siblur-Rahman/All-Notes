@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import {Active, handleToggleDesplay } from "../../shared/CommonJS";
+import {Active, handleToggleDesplay } from "../../../shared/CommonJS";
 import { Link } from "react-scroll";
 // import useGetData from './../../../hooks/useGetData';
 
@@ -7,14 +7,7 @@ import { Link } from "react-scroll";
 const ReactLeftbar = () => {
     // const [getdata]=useGetData('reactLeftbar.json');
     const getdata = [
-        {
-            topic:"How To",
-            subTopic:[
-                {
-                    topics:["Fake Data Ctreate", 'Image Add', 'State Management','Theme Setup','Deploy']
-                },
-            ]
-        },
+       
         {
             topic:"Project SetUp",
             subTopic:[
@@ -24,19 +17,28 @@ const ReactLeftbar = () => {
             ]
         },
         {
-            topic:"ReactJS",
+            topic:"React Basic Topics",
             subTopic:[
                 {
-                    topics:["Props", 'PropType', 'Events', '',]
+                    topics:["React Intro","Components","Props", 'PropType', 'Events', '',]
                 },
             ]
         },
 
         {
-            topic:"Route",
+            topic:"Route Router",
             subTopic:[
                 {
-                    topics:["React Router","Route-Link Dynamic", "Private","useNavitate","Navigate"]
+                    // title:'',
+                    topics:["React-Router",]
+                },
+                {
+                    title:'Component',
+                    topics:["Route-Link", "Private", "Navigate"]
+                },
+                {
+                    title:'Hooks',
+                    topics:["useNavitate",'useLoaderData']
                 }
             ]
         },
@@ -44,7 +46,7 @@ const ReactLeftbar = () => {
             topic:"React Conponents",
             subTopic:[
                 {
-                    topics:["React Helmet Async","React Parallax","Captcha","Icons","Date Picker","Sweetalert", "Form", "Payment", "Recharts", "React Link"]
+                    topics:["awesome-components", "React Helmet Async","React Parallax","Captcha","Icons","Date Picker","Sweetalert", "Form", "Payment", "Recharts", "React Link"]
                 },
                 // {
                 //     title:'Fils',
@@ -56,7 +58,7 @@ const ReactLeftbar = () => {
             topic:"React Hooks",
             subTopic:[
                 {
-                    topics:["React Hook intro","useState", "useEffect","useEffect Example", "Custom hook"]
+                    topics:["React Hook intro","useState", "useEffect","useEffect Example", "useRef", "Custom hook"]
                 },
                 // {
                 //     title:'Fils',
@@ -74,6 +76,18 @@ const ReactLeftbar = () => {
                 //     title:'Fils',
                 //     topics:["file-1", "file-2", ]
                 // }
+            ]
+        },
+        {
+            topic:"How To",
+            subTopic:[
+                {
+                    topics:["Fake Data Ctreate", 'Image Add', 'State Management','Theme Setup','Deploy']
+                },
+                {
+                    title:'Data',
+                    topics:["Fake Data Ctreate", 'To/From-localStorage']
+                },
             ]
         },
         // {
@@ -129,8 +143,8 @@ const ReactLeftbar = () => {
                                 data.subTopic.map(topic=>
                                 
                                 <>
-                                    {topic?.title && <button onClick={handleToggleDesplay} className="sidebarHeading flex-col">{topic?.title}</button>}
-                                    <div className={`${topic.title && 'hidden'}`}>
+                                    {topic?.title && <button onClick={handleToggleDesplay} className="sidebarHeading w-full">{topic?.title}</button>}
+                                    <div className={`${topic?.title && ''}`}>
                                         {
                                             topic?.topics?.map(topic =><Link activeClass="active p-0" to={`${topic}`} spy={true} smooth={true} offset={-100} duration={100} key={topic}  className="link">{topic}</Link>)
                                             // topic?.topics?.map(topic =><a key={topic} href={`#${topic}`} className="link">{topic}</a>)

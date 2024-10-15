@@ -5,8 +5,12 @@ const HelmetAsync = () => {
 <div className="to_jump" id="React Helmet Async">
         <div className="topic-border">
         <Blog 
-    topic={'React Helmet Async'}
-    npmCode={'npm i react-helmet-async'}
+            topic={'React Helmet Async'}
+            npmCode={'npm i react-helmet-async'}
+        />
+            
+        <Blog 
+    heading={'main.jsx'}
     code={`import {HelmetProvider } from 'react-helmet-async';
 
     ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,7 +21,15 @@ const HelmetAsync = () => {
         </HelmetProvider>
         </div>
     </React.StrictMode>,
-    )`}></Blog>
+    )`}/>
+    
+    <Blog
+        fileName={'menu.jsx'}
+        code={`
+            <Helmet> 
+                <title>Menu</title> 
+            </Helmet>`}
+    />
         </div>
 </div>
     );

@@ -1,20 +1,14 @@
-import Blog from "../../../../shared/Blog";
+import Blog from "../../../shared/Blog";
 
 const fOLDER = () => {
     return (
-        <div className="r">
+        <div className="topic-border">
             <Blog
                 topic={''}
-                url={''}
-                define={
-                    <>
-                    <span className="text-yellow-500">Array.filter()</span> 
-                     <br />
-                     
-                    <br /><br />
-                    
-                    </>
-                }
+                topic_time={''}
+                topic_timeURL={''}
+                topicURL={''}
+                define={''}
             />
             <Blog
                 heading={'Example'}
